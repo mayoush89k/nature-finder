@@ -1,35 +1,41 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "./App.css";
+import Header from "./Components/Header/Header";
+import { ThemeProvider } from "./context/ThemeContext";
+import Homepage from "./Components/Homepage/Homepage";
+import AboutUs from "./Components/AboutUs/AboutUs";
+import ContactUs from "./Components/ContactUs/ContactUs";
+import AsideComp from "./Components/AsideComp/AsideComp";
+import { SplitScreens } from "./SplitScreens";
+import { UserProvider } from "./context/UserContext";
+import Login from "./Components/Login/Login";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <BrowserRouter>
+        <ThemeProvider>
+          <UserProvider>
+            <Header />
+            <SplitScreens
+              leftWeight={1}
+              rightWeight={3}
+              left={<AsideComp />}
+              right={
+                <Routes>
+                  <Route path="/" element={<Homepage />} />
+                  <Route path="/AboutUs" element={<AboutUs />} />
+                  <Route path="/ContactUs" element={<ContactUs />} />
+                  <Route path="/Login" element={<Login />} />
+                </Routes>
+              }
+            ></SplitScreens>
+            ;
+          </UserProvider>
+        </ThemeProvider>
+      </BrowserRouter>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

@@ -1,0 +1,301 @@
+[
+  {
+    "name": "Ein Gedi Nature Reserve",
+    "location": "Dead Sea region",
+    "description": "A desert oasis with waterfalls and unique plant life.",
+    "established": "1971",
+    "size": "6,250 acres",
+    "flora": ["acacias", "poplars", "date palms"],
+    "fauna": ["ibex", "rock hyrax", "various bird species"],
+    "activities": {
+      "main": ["hiking", "swimming"],
+      "additional": ["bird-watching", "guided tours"]
+    }
+  },
+  {
+    "name": "Banias Nature Reserve",
+    "location": "Upper Galilee",
+    "description": "Home to the Banias Waterfall and archaeological sites.",
+    "established": "1984",
+    "size": "3,860 acres",
+    "flora": ["oaks", "pines", "carob trees"],
+    "fauna": ["wild boars", "golden jackals", "bird species"],
+    "activities": {
+      "main": ["hiking", "picnicking"],
+      "additional": ["exploring archaeological ruins", "guided tours"]
+    }
+  },
+  {
+    "name": "Timna Park",
+    "location": "Negev Desert",
+    "description": "Known for its unique geological formations, including Solomon's Pillars.",
+    "established": "2009",
+    "size": "15,360 acres",
+    "flora": ["acacias", "desert vegetation"],
+    "fauna": ["Nubian ibex", "foxes", "snakes"],
+    "activities": {
+      "main": ["hiking", "cycling"],
+      "additional": ["rock climbing", "stargazing", "jeep tours"]
+    }
+  },
+  {
+    "name": "Hula Valley Nature Reserve",
+    "location": "Hula Valley",
+    "description": "Important bird-watching site and wetland habitat.",
+    "established": "1964",
+    "size": "12,000 acres",
+    "flora": ["papyrus", "reed beds", "water lilies"],
+    "fauna": ["migratory birds", "water buffalos", "otters"],
+    "activities": {
+      "main": ["bird-watching", "boating"],
+      "additional": ["nature walks", "photography"]
+    }
+  },
+  {
+    "name": "Makhtesh Ramon",
+    "location": "Negev Desert",
+    "description": "A massive crater with unique geological features.",
+    "established": "1956",
+    "size": "62,000 acres",
+    "flora": ["desert plants", "acacias", "tamarisks"],
+    "fauna": ["ibex", "onagers", "raptors"],
+    "activities": {
+      "main": ["hiking", "stargazing"],
+      "additional": ["jeep tours", "photography"]
+    }
+  },
+  {
+    "name": "Yarkon National Park",
+    "location": "Tel Aviv",
+    "description": "Located along the banks of the Yarkon River, offering green spaces and historical sites.",
+    "established": "1965",
+    "size": "2,000 acres",
+    "flora": ["eucalyptus", "cypress", "sycamore"],
+    "fauna": ["mallards", "turtles", "various bird species"],
+    "activities": {
+      "main": ["walking", "picnicking"],
+      "additional": ["biking", "historical site exploration"]
+    }
+  },
+  {
+    "name": "Carmel Hai-Bar Nature Reserve",
+    "location": "Mount Carmel",
+    "description": "Wildlife reserve for the conservation of endangered species.",
+    "established": "2002",
+    "size": "8,500 acres",
+    "flora": ["oaks", "pistachio trees", "cypresses"],
+    "fauna": ["Persian fallow deer", "wild goats", "porcupines"],
+    "activities": {
+      "main": ["hiking", "wildlife observation"],
+      "additional": ["guided tours", "educational programs"]
+    }
+  },
+  {
+    "name": "Achziv National Park",
+    "location": "Northern Israel",
+    "description": "Features a beach, archaeological sites, and a nature reserve.",
+    "established": "1965",
+    "size": "300 acres",
+    "flora": ["eucalyptus", "pines", "myrtle"],
+    "fauna": ["sea turtles", "seagulls", "marine life"],
+    "activities": {
+      "main": ["swimming", "snorkeling"],
+      "additional": ["exploring ruins", "picnicking"]
+    }
+  },
+  {
+    "name": "Tel Dan Nature Reserve",
+    "location": "Upper Galilee",
+    "description": "Known for its ancient trees and the Dan River.",
+    "established": "1974",
+    "size": "350 acres",
+    "flora": ["oaks", "willows", "poplars"],
+    "fauna": ["kingfishers", "turtles", "otter"],
+    "activities": {
+      "main": ["hiking", "nature walks"],
+      "additional": ["canoeing", "bird-watching"]
+    }
+  },
+  {
+    "name": "Mount Hermon",
+    "location": "Golan Heights",
+    "description": "Israel's highest peak with skiing opportunities in winter.",
+    "established": "1987",
+    "size": "7,100 acres",
+    "flora": ["junipers", "oaks", "herbs"],
+    "fauna": ["mountain gazelles", "golden eagles", "snow leopards"],
+    "activities": {
+      "main": ["skiing", "hiking"],
+      "additional": ["cable car rides", "wildlife observation"]
+    }
+  },
+  {
+    "name": "Ashkelon National Park",
+    "location": "Southern Israel",
+    "description": "Archaeological site with remains from various periods.",
+    "established": "1950",
+    "size": "370 acres",
+    "flora": ["palm trees", "myrtle", "olive trees"],
+    "fauna": ["migratory birds", "turtles", "rabbits"],
+    "activities": {
+      "main": ["exploring ruins", "picnicking"],
+      "additional": ["beachcombing", "bird-watching"]
+    }
+  },
+  {
+    "name": "Beit Guvrin-Maresha National Park",
+    "location": "Central Israel",
+    "description": "UNESCO World Heritage site with archaeological and ecological importance.",
+    "established": "1989",
+    "size": "5,000 acres",
+    "flora": ["carob trees", "oaks", "almonds"],
+    "fauna": ["foxes", "jackals", "owls"],
+    "activities": {
+      "main": ["caving", "exploring caves"],
+      "additional": ["guided tours", "archaeological exploration"]
+    }
+  },
+  {
+    "name": "Gan Hashlosha National Park",
+    "location": "Northern Israel",
+    "description": "Known for its natural warm water pools.",
+    "established": "1950",
+    "size": "80 acres",
+    "flora": ["palm trees", "eucalyptus", "willows"],
+    "fauna": ["ducks", "geese", "fish"],
+    "activities": {
+      "main": ["swimming", "picnicking"],
+      "additional": ["hot springs relaxation", "nature walks"]
+    }
+  },
+  {
+    "name": "Ein Hemed National Park",
+    "location": "Jerusalem Hills",
+    "description": "Features a Crusader-era fortress and natural springs.",
+    "established": "1985",
+    "size": "200 acres",
+    "flora": ["pines", "cypresses", "almonds"],
+    "fauna": ["deer", "hedgehogs", "rabbits"],
+    "activities": {
+      "main": ["hiking", "picnicking"],
+      "additional": ["guided tours", "historical site exploration"]
+    }
+  },
+  {
+    "name": "Mount Arbel",
+    "location": "Galilee",
+    "description": "Offers panoramic views of the Sea of Galilee and surrounding areas.",
+    "established": "1967",
+    "size": "450 acres",
+    "flora": ["junipers", "oaks", "thyme"],
+    "fauna": ["birds of prey", "rock hyrax", "wild goats"],
+    "activities": {
+      "main": ["hiking", "rock climbing"],
+      "additional": ["stargazing", "bird-watching"]
+    }
+  },
+  {
+    "name": "Nahal Me'arot Nature Reserve",
+    "location": "Mount Carmel",
+    "description": "Archaeological site with evidence of ancient human activity.",
+    "established": "1971",
+    "size": "350 acres",
+    "flora": ["oaks", "carob trees", "myrtle"],
+    "fauna": ["hyenas", "porcupines", "birds"],
+    "activities": {
+      "main": ["guided tours", "hiking"],
+      "additional": ["archaeological exploration", "cave visits"]
+    }
+  },
+  {
+    "name": "Rosh HaNikra",
+    "location": "Northern Israel",
+    "description": "Limestone cliffs and grottoes along the Mediterranean Sea.",
+    "established": "1968",
+    "size": "65 acres",
+    "flora": ["cliffside vegetation", "sea lavender", "thyme"],
+    "fauna": ["bats", "seagulls", "fish"],
+    "activities": {
+      "main": ["cable car rides", "grotto visits"],
+      "additional": ["seafront walks", "boat tours"]
+    }
+  },
+  {
+    "name": "Haifa's Sculpture Garden",
+    "location": "Haifa",
+    "description": "Outdoor art display in a scenic garden setting.",
+    "established": "1964",
+    "size": "20 acres",
+    "flora": ["sculpture-themed gardens", "cypress trees", "roses"],
+    "fauna": ["birds", "butterflies", "squirrels"],
+    "activities": {
+      "main": ["sculpture viewing", "picnicking"],
+      "additional": ["garden walks", "art appreciation"]
+    }
+  },
+  {
+    "name": "Ayun River Nature Reserve",
+    "location": "Upper Galilee",
+    "description": "Protects the Ayun River and its surrounding ecosystem.",
+    "established": "1965",
+    "size": "550 acres",
+    "flora": ["willows", "poplars", "wildflowers"],
+    "fauna": ["kingfishers", "turtles", "otter"],
+    "activities": {
+      "main": ["nature walks", "bird-watching"],
+      "additional": ["picnicking", "streamside relaxation"]
+    }
+  },
+  {
+    "name": "Mount Tabor",
+    "location": "Lower Galilee",
+    "description": "A prominent biblical site and a popular hiking destination.",
+    "established": "1970",
+    "size": "330 acres",
+    "flora": ["oaks", "pines", "herbs"],
+    "fauna": ["birds of prey", "wild goats", "butterflies"],
+    "activities": {
+      "main": ["hiking", "pilgrimage"],
+      "additional": ["picnicking", "panoramic views"]
+    }
+  },
+  {
+    "name": "Ma'ayan Harod National Park",
+    "location": "Lower Galilee",
+    "description": "Surrounding the spring of Harod, a popular camping and recreation area.",
+    "established": "1961",
+    "size": "1,500 acres",
+    "flora": ["oaks", "pistachio trees", "almonds"],
+    "fauna": ["wild boars", "turtles", "various bird species"],
+    "activities": {
+      "main": ["camping", "hiking"],
+      "additional": ["bird-watching", "picnicking"]
+    }
+  },
+  {
+    "name": "En Afek Nature Reserve",
+    "location": "Northern Israel",
+    "description": "Wetland reserve with diverse flora and fauna.",
+    "established": "1979",
+    "size": "120 acres",
+    "flora": ["papyrus", "reed beds", "water lilies"],
+    "fauna": ["ducks", "turtles", "frogs"],
+    "activities": {
+      "main": ["bird-watching", "nature walks"],
+      "additional": ["boating", "photography"]
+    }
+  },
+  {
+    "name": "Yarkon-Tel Afek Trail",
+    "location": "Central Israel",
+    "description": "A scenic trail along the Yarkon River and Tel Afek archaeological site.",
+    "established": "2007",
+    "size": "50 miles",
+    "flora": ["eucalyptus", "cypress", "willows"],
+    "fauna": ["birds", "fish", "turtles"],
+    "activities": {
+      "main": ["hiking", "biking"],
+      "additional": ["historical site exploration", "nature walks"]
+    }
+  }
+]

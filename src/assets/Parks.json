@@ -1,0 +1,92 @@
+[{
+      "id": 1,
+    "CreatedAt": "13/12/2023",
+    "Name": "Ain Harmon",
+    "Picture": ["https://baliletayel.co.il/wp-content/uploads/elementor/thumbs/-%D7%97%D7%A8%D7%9E%D7%95%D7%9F-1-scaled-pxrjc5bw2eoxt5wnsyipzrue7av881v1p9neuaommw.jpg","https://traveling-with-eran.com/wp-content/uploads/2020/08/6.6.14-%D7%A1%D7%95%D7%A3-%D7%A9%D7%91%D7%95%D7%A2-%D7%91%D7%9E%D7%92%D7%93%D7%9C-%D7%A9%D7%9E%D7%A1-%D7%91%D7%A9%D7%91%D7%95%D7%A2%D7%95%D7%AA-180-1024x768.jpg"],
+    "Description": "Ain Harmun - عين اللبنى - עין חרמון \n Located at the northern end of the country, on the slopes of Hermon, the magical Eye of Hermon awaits you, with one of the most special sights in Israel: a concrete pool filled with water, overlooking the mountainous landscapes of Hermon",
+    "Options": {
+        "queueReservation":false,
+        "tables":false,
+      "picnic": false,
+      "view":true,
+        "bathrooms": false,
+      "camping":false,
+      "parking": false,
+        "entranceCost": false,
+        "handicap": false,
+        "openingTime": "8:00 - 17:00"
+    },
+    "Category": "Landscape",
+    "Location": "",
+    "City": "North"
+},{
+    "id": 2,
+  "CreatedAt": "14/12/2023",
+  "Name": "Tel Afek",
+  "Picture": ["https://en.wikipedia.org/wiki/Antipatris#/media/File:%D7%94%D7%90%D7%92%D7%9D_%D7%94%D7%92%D7%93%D7%95%D7%9C_%D7%91%D7%AA%D7%9C_%D7%90%D7%A4%D7%A7.jpg","https://en.wikipedia.org/wiki/Antipatris#/media/File:1%D7%AA%D7%9C_%D7%90%D7%A4%D7%A7.JPG"],
+  "Description": " Tel Afek - Antipatris Park -  منتزه رأس العين - תל אפק (אנטיפטריס) \n Antipatris/Tel Afek lies at the strong perennial springs of the Yarkon River, which throughout history has created an obstacle between the hill country to the east and the Mediterranean to the west, forcing travellers and armies to pass through the narrow pass between the springs and the foothills of Samaria. This gave the location of Antipatris/Tel Afek its strategic importance.",
+  "Options": {
+      "queueReservation":false,
+      "picnic": true,
+      "camping":true,
+      "tables":true,
+      "view":true,
+      "bathrooms": true,
+      "parking": true,
+      "entranceCost": false,
+      "handicap": true,
+      "openingTime": "8:00 - 17:00"
+  },
+  "Category": "Park",
+  "Location": "",
+  "City": "Central"
+},
+{
+    "id": 3,
+  "CreatedAt": "14/12/2023",
+  "Name": "Gan HaShlosha",
+  "Picture": ["https://en.wikipedia.org/wiki/Antipatris#/media/File:%D7%94%D7%90%D7%92%D7%9D_%D7%94%D7%92%D7%93%D7%95%D7%9C_%D7%91%D7%AA%D7%9C_%D7%90%D7%A4%D7%A7.jpg","https://en.wikipedia.org/wiki/Antipatris#/media/File:1%D7%AA%D7%9C_%D7%90%D7%A4%D7%A7.JPG"],
+  "Description": "Gan HaShlosha -  الساخنة -גן השלושה \n Antipatris/Tel Afek lies at the strong perennial springs of the Yarkon River, which throughout history has created an obstacle between the hill country to the east and the Mediterranean to the west, forcing travellers and armies to pass through the narrow pass between the springs and the foothills of Samaria. This gave the location of Antipatris/Tel Afek its strategic importance.",
+  "Options": {
+      "queueReservation":false,
+      "picnic": true,
+      "camping":true,
+      "tables":true,
+      "view":true,
+      "bathrooms": true,
+      "parking": true,
+      "entranceCost": false,
+      "handicap": true,
+      "openingTime": "8:00 - 17:00"
+  },
+  "Category": "Park",
+  "Location": "",
+  "City": "Central"
+}
+,
+{
+    "id": 4,
+  "CreatedAt": "14/12/2023",
+  "Name": "Ain Thai",
+  "Picture": ["https://en.wikipedia.org/wiki/Antipatris#/media/File:%D7%94%D7%90%D7%92%D7%9D_%D7%94%D7%92%D7%93%D7%95%D7%9C_%D7%91%D7%AA%D7%9C_%D7%90%D7%A4%D7%A7.jpg","https://en.wikipedia.org/wiki/Antipatris#/media/File:1%D7%AA%D7%9C_%D7%90%D7%A4%D7%A7.JPG"],
+  "Description": "Ain Thai - عين بلاطة (جحلة) - עין תאי \n ",
+  "Options": {
+      "queueReservation":false,
+      "picnic": true,
+      "camping":true,
+      "tables":true,
+      "view":true,
+      "bathrooms": true,
+      "parking": true,
+      "entranceCost": false,
+      "handicap": true,
+      "openingTime": "8:00 - 17:00"
+  },
+  "Category": "Park",
+  "Location": "",
+  "City": "Central"
+}
+
+
+
+]
