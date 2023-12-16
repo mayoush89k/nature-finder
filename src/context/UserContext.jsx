@@ -10,12 +10,12 @@ export const UserProvider = ({ children }) => {
   );
 
   useEffect(() => {
-   localStorage.setItem("user", JSON.stringify(user)); 
-  },[user])
+    localStorage.setItem("user", JSON.stringify(user));
+  }, [user]);
 
   const logOutUser = () => {
     localStorage.removeItem("user");
-    setUser(null)
+    setUser(null);
   };
   const updateUser = (updatedUser) => {
     setUser(updatedUser);
@@ -24,7 +24,9 @@ export const UserProvider = ({ children }) => {
     return JSON.parse(localStorage.getItem("user"));
   };
   return (
-    <UserContext.Provider value={{ user, setUser, getUser, logOutUser, updateUser }}>
+    <UserContext.Provider
+      value={{ user, setUser, getUser, logOutUser, updateUser }}
+    >
       {children}
     </UserContext.Provider>
   );

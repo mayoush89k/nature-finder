@@ -1,11 +1,10 @@
-import React, { useEffect, useState } from "react";
-import { useTheme } from "../../context/ThemeContext";
-import axios from "axios";
+import React, { useState } from "react";
 import "./Login.css";
-// import Spinner from "../Spinner/Spinner";
 import { useUser } from "../../context/UserContext";
 import { RotateLoader } from "react-spinners";
 import { useNavigate } from "react-router-dom";
+import useUsersList from "../../hooks/useUsersList";
+import { useTheme } from "../../context/ThemeContext";
 
 export default function Login() {
   const form = [
@@ -25,21 +24,10 @@ export default function Login() {
   const { user, setUser } = useUser();
   const { theme } = useTheme();
   const [inputValues, setInputValues] = useState(form);
-  const [usersList, setUsersList] = useState([]);
-  const usersUrl = "https://6571e97ed61ba6fcc013f0b6.mockapi.io/users";
+  const { usersList, loading, error } = useUsersList(
+    "https://6571e97ed61ba6fcc013f0b6.mockapi.io/users"
+  );
   let navigate = useNavigate();
-
-  const fetchUsers = async () => {
-    try {
-      const data = await axios.get(usersUrl);
-      setUsersList(data.data);
-    } catch (error) {
-      console.error(error);
-    }
-  };
-  useEffect(() => {
-    fetchUsers();
-  }, []);
 
   const handleSubmit = () => {
     const userMatch = usersList.find((user) => {
@@ -83,7 +71,7 @@ export default function Login() {
                 )
               }
             />
-            {value.error && <p id="error">Wrong {value.placeholder}</p>}
+            {value.error && <p id="error">{value.error}</p>}
           </div>
         ))}
         <button type="submit">Login</button>

@@ -1,4 +1,4 @@
-#LoginPage form {
+#Register form {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -7,17 +7,18 @@
   padding: 20px;
   border-radius: 20px;
 }
-#LoginPage input {
+#Register input {
   padding: 10px;
   font-size: 22px;
+  margin: 10px;
 }
-#LoginPage button {
+#Register button {
   padding: 10px 20px;
   font-size: 20px;
   border-radius: 20px;
 }
 
-#LoginPage #login-msg {
+#Register #login-msg {
   width: 200px;
   height: 200px;
   position: absolute;
@@ -28,10 +29,10 @@
   justify-content: center;
   align-items: center;
 }
-#LoginPage #error {
+#Register #error {
   color: red;
 }
-#LoginPage .spinner {
+#Register .spinner {
   width: 200px;
   height: 200px;
   position: absolute;

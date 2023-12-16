@@ -75,11 +75,11 @@ body {
 }
 
 #dark-header #setting-container {
-  background-color: var(--dark-color8);
+  /* background-color: var(--dark-color8); */
   border: 2px dotted var(--dark-color7);
 }
 #light-header #setting-container {
-  background-color: var(--light-color8);
+  /* background-color: var(--light-color8); */
   border: 2px dotted var(--light-color7);
 }
 
@@ -95,6 +95,19 @@ body {
 }
 #dark-header .menu-item:hover {
   border-bottom: 5px solid var(--green-color1);
+}
+#light-header .link {
+  color: var(--blue-color6);
+}
+#dark-header .link {
+  color: var(--blue-color2);
+}
+
+#light-header .link:hover {
+  border-bottom: 5px solid var(--blue-color5);
+}
+#dark-header .link:hover {
+  border-bottom: 5px solid var(--blue-color1);
 }
 
 /* Aside Mode styles */
@@ -193,13 +206,13 @@ body {
   background-color: var(--green-color4);
 }
 .pages-light .spinner {
-  background-color: var(--light-color4);
-  color: var(--light-color8);
-  border: 1px solid var(--light-color8);
+  background-color: var(--blue-color2);
+  color: var(--blue-color6);
+  border: 1px solid var(--blue-color6);
 }
 
 .pages-dark .spinner {
-  background-color: var(--dark-color4);
-  color: var(--dark-color8);
-  border: 1px solid var(--dark-color8);
+  background-color: var(--blue-color6);
+  color: var(--blue-color4);
+  border: 1px solid var(--blue-color4);
 }

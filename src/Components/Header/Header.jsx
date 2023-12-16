@@ -46,15 +46,26 @@ export default function Header() {
         <div id="setting-container">
           {console.log(user)}
           {!user ? (
-            <button
-              onClick={() =>
-                setTimeout(() => {
-                  setClicked(false);
-                }, 500)
-              }
-            >
-              <Link to="/Login">Login</Link>
-            </button>
+            <div>
+              <button
+                onClick={() =>
+                  setTimeout(() => {
+                    setClicked(false);
+                  }, 500)
+                }
+              >
+                <Link to="/Login" className="link">Login</Link>
+              </button>{" "}
+              <button
+                onClick={() =>
+                  setTimeout(() => {
+                    setClicked(false);
+                  }, 500)
+                }
+              >
+                <Link to="/Register" className="link">Register</Link>
+              </button>
+            </div>
           ) : (
             <button
               onClick={() =>

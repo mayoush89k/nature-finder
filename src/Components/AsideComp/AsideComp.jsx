@@ -51,11 +51,11 @@ const AsideComp = () => {
         {cities.map((item, index) => (
           <Link
             key={index}
-            className={currCount === index && "active"}
+            className={currCount === index ? "active" : ""}
             to={item.path}
             onClick={() => onClickTab(index)}
           >
-            <span className={currCount === index && "text-active"}>
+            <span className={currCount === index ? "text-active" : ""}>
               <i className="fas fa-arrow-right"></i>
               {item.name}
             </span>
