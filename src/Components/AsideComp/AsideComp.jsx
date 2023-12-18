@@ -1,26 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import "./AsideComp.css";
 import { Link } from "react-router-dom";
 import { useTheme } from "../../context/ThemeContext";
+import useCities from "../../hooks/useCities";
+import { useUser } from "../../context/UserContext";
 
 const AsideComp = () => {
-  const {theme} = useTheme()
+  const { theme } = useTheme();
   const [startAnimate, setStartAnimate] = React.useState(false);
   const [highlightTopPosition, setStateHighlightTopPosition] =
     React.useState(0);
   const [currCount, setCurrCount] = React.useState(0);
+  const {stateList, getCitiesListByState } = useCities();
 
-  const cities = [
-    {
-        name: 'Jerusalem',
-        path: '/Jerusalem'
-    },
-    {
-        name: 'Tel-Aviv',
-        path: '/TelAviv'
-    }
-  ]
-
+  const {user} = useUser()
   const onClickTab = (count) => {
     setStartAnimate(false);
     setCurrCount(count);
@@ -30,7 +23,6 @@ const AsideComp = () => {
       setStartAnimate(true);
     }, 100);
   };
-
   React.useEffect(() => {
     setTimeout(() => {
       setStartAnimate(true);
@@ -48,16 +40,17 @@ const AsideComp = () => {
             startAnimate && "sidebar__highlight__animate"
           }`}
         ></div>
-        {cities.map((item, index) => (
+        {stateList.map((item, index) => (
           <Link
             key={index}
             className={currCount === index ? "active" : ""}
-            to={item.path}
-            onClick={() => onClickTab(index)}
+            // to='\'
+            state={{state : getCitiesListByState(item)}}
+            onClick={() => onClickTab(index, item)}
           >
             <span className={currCount === index ? "text-active" : ""}>
               <i className="fas fa-arrow-right"></i>
-              {item.name}
+              {item}
             </span>
           </Link>
         ))}

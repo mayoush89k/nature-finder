@@ -10,6 +10,7 @@ import { SplitScreens } from "./SplitScreens";
 import { UserProvider } from "./context/UserContext";
 import Login from "./Components/Login/Login";
 import Register from "./Components/Register/Register";
+import Nature from "./Components/Nature/Nature";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
                   <Route path="/ContactUs" element={<ContactUs />} />
                   <Route path="/Login" element={<Login />} />
                   <Route path="/Register" element={<Register />} />
+                  <Route path="/Nature" element={<Nature />} />
                 </Routes>
               }
             ></SplitScreens>

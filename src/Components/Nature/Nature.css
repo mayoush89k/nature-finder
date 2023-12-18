@@ -1,12 +1,11 @@
-#Homepage{
-    padding-top: 80px;
+#Nature{
+    padding-top: 120px;
     border-radius: 5px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     width: 300px;
     margin: 0 auto;
 }
-#Homepage #cities-list,
-#Homepage #parks-list{
+#Nature #parks-list{
     margin: 50px auto;
     display: flex;
     gap: 50px;
@@ -15,20 +14,22 @@
     flex-wrap: wrap;
     max-width: 90%;
 }
-#Homepage .park-card{
-    width: 300px;
+#Nature .park-card{
+    width: 250px;
     height: fit-content;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     padding: 20px 20px;
     border-radius: 6px;
     cursor: pointer;
 }
-#Homepage .park-card img{
-    width: 100%;
+#Nature .park-card img{
+    max-width: 100%;
     max-height: 300px;
 }
-#Homepage button{
+#Nature .park-card button{
     padding: 10px;
+    margin: 10px;
     font-size: 20px;
-    border-radius: 20px;
 }
+
+

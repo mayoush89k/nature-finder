@@ -8,7 +8,7 @@
   padding: 0;
   width: 200px;
   position: fixed;
-  position: relative;
+  /* position: relative; */
   z-index: 0;
   height: 90vh;
   overflow: auto;
@@ -100,7 +100,6 @@
 
   &::before {
     content: "";
-    font-family: "Font Awesome 5 Free";
   }
 }
 

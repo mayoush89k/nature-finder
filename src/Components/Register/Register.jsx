@@ -42,12 +42,19 @@ export default function Register() {
       error: "",
       type: "password",
       placeholder: "Confirm Password",
-    },
+    },{
+      name: "city",
+      value: "",
+      error:"",
+      type: "text",
+      placeholder: "City"
+    }
   ]);
   const [formData, setFormData] = useState({
     username: "",
     email: "",
     password: "",
+    city: ""
   });
   const [isValid, setIsValid] = useState(true);
   const { user, setUser } = useUser();
@@ -166,7 +173,7 @@ export default function Register() {
             <RotateLoader />{" "}
           </div>
           {setTimeout(() => {
-            navigate(`/`, { state: { user } });
+            navigate(`/`, { state: { user: user } });
           }, 2000)}
         </div>
       )}
