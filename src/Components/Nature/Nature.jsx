@@ -80,7 +80,7 @@ export default function Nature() {
                     handleStatus(park);
                   }}
                 >
-                  {park.status ? park.status : "not yet"}
+                  {park.status ? park.status : "pending"}
                 </button>
                 <a
                   href={park.location.direction}

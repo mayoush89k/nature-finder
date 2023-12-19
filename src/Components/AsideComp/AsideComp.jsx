@@ -44,7 +44,7 @@ const AsideComp = () => {
           <Link
             key={index}
             className={currCount === index ? "active" : ""}
-            // to='\'
+            to='/'
             state={{state : getCitiesListByState(item)}}
             onClick={() => onClickTab(index, item)}
           >

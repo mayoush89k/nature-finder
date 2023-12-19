@@ -6,19 +6,30 @@ const useParks = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [filterParksList, setFilterParksList] = useState([]);
-  const url = "https://657621200febac18d403b5d1.mockapi.io/parks"
+  const url = "https://657621200febac18d403b5d1.mockapi.io/parks";
   useEffect(() => {
     fetchData();
   }, [url]);
-  
+
   const fetchData = async () => {
     setLoading(true);
     try {
       const response = await axios.get(url);
-      setParksList(response.data.filter(park => park.status == 'approved'));
+      setParksList(response.data.filter((park) => park.status == "approved"));
       // setParksList(response.data)
-      console.log(parksList)
       setLoading(false);
+    } catch (error) {
+      setError(error);
+      setLoading(false);
+    }
+  };
+  const getPark = async (id) => {
+    setLoading(true);
+    try {
+      const response = await axios.get(url + "/" + id);
+      console.log(response.data);
+      setLoading(false);
+      return response.data;
     } catch (error) {
       setError(error);
       setLoading(false);
@@ -26,13 +37,14 @@ const useParks = () => {
   };
   const filterParks = (state) => {
     setFilterParksList(
-      parksList?.filter((park) =>
-        park?.location.state
-          .toLowerCase()
-          .includes(state[0].state?.toLowerCase())||
-        park?.location.city
-          .toLowerCase()
-          .includes(state[0].state?.toLowerCase())
+      parksList?.filter(
+        (park) =>
+          park.location.state
+            .toLowerCase()
+            .includes(state[0].state?.toLowerCase()) ||
+          park.location.city
+            .toLowerCase()
+            .includes(state[0].state?.toLowerCase())
       )
     );
     return filterParksList;
@@ -43,20 +55,41 @@ const useParks = () => {
   };
   const addNewPark = async (newPark) => {
     try {
-      const response = await axios.post(url,newPark)
-      console.log("post new park ", response.data)
-      fetchData()
+      const response = await axios.post(url, newPark);
+      console.log("post new park ", response.data);
+      fetchData();
     } catch (error) {
-      setError(error)
+      setError(error);
     }
-  }
-
+  };
+  const updateParkData = async (park, changedKey, changedValue) => {
+    const newData = park[changedKey]
+      ? {
+          [changedKey]: [...park[changedKey], changedValue],
+        }
+      : {
+          [changedKey]: [changedValue],
+        };
+    try {
+      setLoading(true);
+      const response = await axios.put(`${url}/${park.id}`, newData);
+      console.log("updated ", response.data);
+      fetchData();
+      console.log(park);
+      setLoading(false);
+    } catch (error) {
+      setError(error);
+      setLoading(false);
+    }
+  };
   return {
     parksList,
     filterParksList,
     filterParks,
     filterParksCity,
     addNewPark,
+    updateParkData,
+    getPark,
     loading,
     error,
   };

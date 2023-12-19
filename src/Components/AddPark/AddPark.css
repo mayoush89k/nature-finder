@@ -49,3 +49,24 @@
   #spinner-loader{
       margin: 50px;
   }
+
+  @media (max-width:500px) {
+    #AddPark form{
+      gap: 5px;
+      padding: 10px;
+    }
+    #AddPark input {
+      padding: 5px;
+      font-size: 16px;
+      margin: 5px;
+    }
+    #AddPark button {
+      padding: 10px 15px;
+      font-size: 10px;
+    }
+    #AddPark #login-msg {
+      width: 100px;
+      height: 100px;
+      font-size: 20px;
+    }
+  }

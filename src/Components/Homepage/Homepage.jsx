@@ -3,11 +3,12 @@ import { useTheme } from "../../context/ThemeContext";
 import useParks from "../../hooks/useParks";
 import { RotateLoader } from "react-spinners";
 import "./Homepage.css";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 export default function Homepage() {
   const { theme } = useTheme();
   const { state } = useLocation();
+  let navigate = useNavigate();
   const {
     parksList,
     filterParks,
@@ -15,15 +16,16 @@ export default function Homepage() {
     filterParksList,
     loading,
     error,
-  } = useParks("https://657621200febac18d403b5d1.mockapi.io/parks");
+  } = useParks();
 
   useEffect(() => {
+    console.log(state)
     state?.state && filterParks(state.state);
   }, [state]);
 
   return (
     <div id="Homepage" className={theme ? "pages-light" : "pages-dark"}>
-      <h1>Parks List</h1>
+            <h1>Parks List</h1>
       <div id="cities-list">
         {state?.state?.map((dist, index) => (
           <button
@@ -58,8 +60,14 @@ export default function Homepage() {
                   filterParksList?.map((park, index) => {
                     // not empty. show the list of parks filtered by clicked state or city
                     return (
-                      <div key={index} className="park-card">
-                        <img src={park.pictures} alt={park.name} />
+                      <div
+                        key={index}
+                        className="park-card"
+                        onClick={() =>
+                          navigate(`${park.name}`, { state: { park } })
+                        }
+                      >
+                        <img src={park.pictures[0]} alt={park.name} />
                         <h2>{park.name}</h2>
                       </div>
                     );
@@ -69,9 +77,15 @@ export default function Homepage() {
                 parksList?.map((park, index) => {
                   // if not clicking on aside list, show all the list
                   return (
-                    <div key={index} className="park-card">
-                      <img src={park.pictures} alt={park.name} />
-                      <h2>{park.name}</h2>
+                    <div
+                      onClick={() =>
+                        navigate(`${park.name}`, { state: { park } })
+                      }
+                    >
+                      <div key={index} className="park-card">
+                        <img src={park.pictures[0]} alt={park.name} />
+                        <h2>{park.name}</h2>
+                      </div>
                     </div>
                   );
                 })
@@ -80,6 +94,7 @@ export default function Homepage() {
           )}
         </div>
       )}
+
     </div>
   );
 }

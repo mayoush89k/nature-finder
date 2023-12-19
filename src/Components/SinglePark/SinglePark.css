@@ -1,0 +1,42 @@
+#SinglePark #main-container {
+  margin: auto;
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+#SinglePark #pictures-container,
+#SinglePark #activities-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+#SinglePark #pictures-container img:nth-child(1) {
+    max-width: 500px;
+    height: 300px;
+}
+#SinglePark #pictures-container img {
+    max-width: 200px;
+    height: 150px;
+}
+#SinglePark input {
+  padding: 10px;
+  font-size: 18px;
+  margin: 10px;
+}
+#SinglePark button {
+  padding: 10px 20px;
+  font-size: 15px;
+  border-radius: 20px;
+}
+
+#SinglePark #activities-container div{
+    padding: 10px;
+    margin: 10px;
+    border: 2px outset 
+}

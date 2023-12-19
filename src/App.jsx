@@ -12,6 +12,7 @@ import Login from "./Components/Login/Login";
 import Register from "./Components/Register/Register";
 import Nature from "./Components/Nature/Nature";
 import AddPark from "./Components/AddPark/AddPark";
+import SinglePark from "./Components/SinglePark/SinglePark";
 
 function App() {
   return (
@@ -19,14 +20,34 @@ function App() {
       <BrowserRouter>
         <ThemeProvider>
           <UserProvider>
-            <Header />
-            <SplitScreens
-              leftWeight={1}
-              rightWeight={3}
-              left={<AsideComp />}
-              right={
+            {window.outerWidth > 800 ? (
+              <div>
+                <Header />
+
+                <SplitScreens
+                  leftWeight={1}
+                  rightWeight={3}
+                  left={<AsideComp />}
+                  right={
+                    <Routes>
+                      <Route path="/" element={<Homepage />} />
+                      <Route path="/:name" element={<SinglePark />} />
+                      <Route path="/AboutUs" element={<AboutUs />} />
+                      <Route path="/ContactUs" element={<ContactUs />} />
+                      <Route path="/Login" element={<Login />} />
+                      <Route path="/Register" element={<Register />} />
+                      <Route path="/Nature" element={<Nature />} />
+                      <Route path="/AddPark" element={<AddPark />} />
+                    </Routes>
+                  }
+                ></SplitScreens>
+              </div>
+            ) : (
+              <div>
+                <Header />
                 <Routes>
                   <Route path="/" element={<Homepage />} />
+                  <Route path="/:name" element={<SinglePark />} />
                   <Route path="/AboutUs" element={<AboutUs />} />
                   <Route path="/ContactUs" element={<ContactUs />} />
                   <Route path="/Login" element={<Login />} />
@@ -34,9 +55,8 @@ function App() {
                   <Route path="/Nature" element={<Nature />} />
                   <Route path="/AddPark" element={<AddPark />} />
                 </Routes>
-              }
-            ></SplitScreens>
-            ;
+              </div>
+            )}
           </UserProvider>
         </ThemeProvider>
       </BrowserRouter>

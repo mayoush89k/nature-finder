@@ -185,16 +185,18 @@ body {
   color: var(--light-color3);
 }
 .pages-light input::placeholder {
-  color: var(--dark-color5);
+  color: var(--green-color5);
 }
 .pages-dark input::placeholder {
   color: var(--light-color5);
 }
 .pages-dark input:focus {
   background-color: var(--green-color5);
+  border-color: var(--green-color3);
 }
 .pages-light input:focus {
   background-color: var(--green-color3);
+  border-color: var(--green-color5);
 }
 .pages-light .spinner {
   background-color: var(--blue-color2);
@@ -229,8 +231,8 @@ body {
 }
 
 .pages-light button {
-  background-color: var(--green-color4);
-  color: var(--green-color2);
+  background-color: var(--green-color1);
+  color: var(--green-color4);
   border: 2px solid var(--green-color4);
 }
 .pages-dark button {
@@ -240,11 +242,39 @@ body {
 }
 .pages-light button:hover {
   background-color: var(--green-color4);
-  color: var(--green-color1);
+  color: var(--green-color2);
   transition: 0.5s;
 }
 .pages-dark button:hover {
   background-color: var(--green-color1);
   color: var(--green-color4);
   transition: 0.5s;
+}
+
+/* single park styles*/
+.pages-light #activities-container div {
+  background-color: var(--green-color2);
+  color: var(--dark-color1);
+  border-color: var(--green-color4);
+}
+.pages-dark #activities-container div {
+  background-color: var(--green-color4);
+  color: var(--dark-color1);
+  border: 1px solid var(--green-color1);
+}
+
+@media (max-width: 800px) and (min-width: 501px) {
+  body {
+    min-height: 50vh;
+  }
+  .App {
+    min-height: 50vh;
+    padding-top: 10px;
+    gap: 10px;
+  }
+  .pages-light,
+  .pages-dark {
+    min-height: 50vh;
+    padding-top: 5vh;
+  }
 }

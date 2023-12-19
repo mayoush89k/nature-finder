@@ -4,6 +4,7 @@
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     width: 300px;
     margin: 0 auto;
+    text-align: center;
 }
 #Homepage #cities-list,
 #Homepage #parks-list{
@@ -19,7 +20,7 @@
     width: 300px;
     height: fit-content;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    padding: 20px 20px;
+    padding: 20px ;
     border-radius: 6px;
     cursor: pointer;
 }
@@ -32,4 +33,27 @@
     padding: 10px;
     font-size: 20px;
     border-radius: 20px;
+}
+
+@media (max-width: 800px)  {
+    #Homepage{
+        padding-top: 50px;
+    }
+    #Homepage #cities-list,
+    #Homepage #parks-list{
+        
+        gap: 5px;
+        max-width: 100%;
+    }
+#Homepage .park-card{
+    padding: 10px;
+}
+    #Homepage h2{
+        font-size: 16px;
+    }
+    #Homepage button{
+        padding: 5px;
+        font-size: 16px;
+        border-radius: 20px;
+    }
 }
