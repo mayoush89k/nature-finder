@@ -1,0 +1,51 @@
+#AddPark form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 20px;
+  }
+  #AddPark input {
+    padding: 10px;
+    font-size: 22px;
+    margin: 10px;
+  }
+  #AddPark button {
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 20px;
+  }
+  
+  #AddPark #login-msg {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #AddPark #error {
+    color: red;
+  }
+  #AddPark .spinner {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  #spinner-loader{
+      margin: 50px;
+  }

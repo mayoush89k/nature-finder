@@ -143,10 +143,10 @@ body {
 .pages-light,
 .pages-dark {
   min-height: 99vh;
-  min-width: 99vw;
+  min-width: 88vw;
   margin: auto;
   padding-top: 10vh;
-  padding-left: 10vw;
+  /* padding-left: 5vw; */
   transition: 0.3s;
   display: flex;
   flex-direction: column;
@@ -159,7 +159,7 @@ body {
   color: var(--dark-color3);
 }
 .pages-dark {
-  background-color: var(--dark-color3);
+  background-color: var(--dark-color4);
   color: var(--light-color2);
 }
 
@@ -191,18 +191,10 @@ body {
   color: var(--light-color5);
 }
 .pages-dark input:focus {
-  background-color: var(--dark-color3);
+  background-color: var(--green-color5);
 }
 .pages-light input:focus {
-  background-color: var(--light-color3);
-}
-.pages-light form button {
-  background-color: var(--green-color2);
-  color: var(--green-color4);
-}
-.pages-dark form button {
-  background-color: var(--green-color4);
-  color: var(--green-color6);
+  background-color: var(--green-color3);
 }
 .pages-light .spinner {
   background-color: var(--blue-color2);
@@ -248,9 +240,11 @@ body {
 }
 .pages-light button:hover {
   background-color: var(--green-color4);
+  color: var(--green-color1);
   transition: 0.5s;
 }
 .pages-dark button:hover {
   background-color: var(--green-color1);
+  color: var(--green-color4);
   transition: 0.5s;
 }

@@ -42,25 +42,25 @@ export default function Register() {
       error: "",
       type: "password",
       placeholder: "Confirm Password",
-    },{
+    },
+    {
       name: "city",
       value: "",
-      error:"",
+      error: "",
       type: "text",
-      placeholder: "City"
-    }
+      placeholder: "City",
+    },
   ]);
   const [formData, setFormData] = useState({
+    name: "",
     username: "",
     email: "",
     password: "",
-    city: ""
+    city: "",
   });
   const [isValid, setIsValid] = useState(true);
   const { user, setUser } = useUser();
-  const { usersList, loading, error } = useUsersList(
-    "https://6571e97ed61ba6fcc013f0b6.mockapi.io/users"
-  );
+  const { usersList, createUser, loading, error } = useUsersList();
   const { theme } = useTheme();
   let navigate = useNavigate();
 
@@ -69,8 +69,8 @@ export default function Register() {
 
     // Check for empty fields
     formList.map((input) => {
-      const {value , name} = input
-      setFormData(prev => [{...prev, [name]:value }])
+      const { value, name } = input;
+      setFormData((prev) => [{ ...prev, [name]: value }]);
       if (!input.value) {
         input.error = `${
           input.name.charAt(0).toUpperCase() + input.name.slice(1)
@@ -108,7 +108,7 @@ export default function Register() {
         input.error = "Passwords don't match";
         setIsValid(false);
       }
-      });
+    });
 
     return isValid;
   };
@@ -118,7 +118,19 @@ export default function Register() {
 
     // Validate the form
     if (validateForm()) {
-      setUser(formData);
+      const newUser = {
+        name: formData.name,
+        username: formData.username,
+        email: formData.email,
+        password: formData.password,
+        avatar: formData.avatar ? formData.avatar : "",
+        parksAdded: [],
+        favorite: [],
+        location: { city: formData.city },
+
+      }
+      setUser(newUser);
+      createUser(newUser);
       // Perform registration logic using formData
       console.log("Form data submitted:", formData);
       // You can add your registration logic here (e.g., API call)
@@ -129,7 +141,7 @@ export default function Register() {
   const handleChange = (e) => {
     // no need to save also confirmed password to my user's data
     e.target.name != "confirmed" &&
-    //save the form values to user's data
+      //save the form values to user's data
       setFormData({ ...formData, [e.target.name]: e.target.value });
     setFormList(
       formList.map((input) =>

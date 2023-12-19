@@ -8,9 +8,9 @@
   padding: 0;
   width: 200px;
   position: fixed;
-  /* position: relative; */
+  position: sticky;
   z-index: 0;
-  height: 90vh;
+  height: 94vh;
   overflow: auto;
   transition: background-color 0.2s ease-in;
 

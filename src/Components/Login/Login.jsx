@@ -24,9 +24,7 @@ export default function Login() {
   const { user, setUser } = useUser();
   const { theme } = useTheme();
   const [inputValues, setInputValues] = useState(form);
-  const { usersList, loading, error } = useUsersList(
-    "https://6571e97ed61ba6fcc013f0b6.mockapi.io/users"
-  );
+  const { usersList, loading, error } = useUsersList();
   let navigate = useNavigate();
 
   const handleSubmit = () => {

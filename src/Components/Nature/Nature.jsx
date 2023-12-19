@@ -6,15 +6,12 @@ import axios from "axios";
 export default function Nature() {
   const [parks, setParks] = useState();
   const [input, setInput] = useState("");
+
   const url = "https://657621200febac18d403b5d1.mockapi.io/parks";
   useEffect(() => {
-    // setParks(
-    //   national_parks.sort((a, b) => {
-    //     return a.id > b.id ? 1 : -1;
-    //   }))
-    // setParks(national_parks)
     fetchData();
   }, []);
+
   const deletePark = async (index) => {
     try {
       const response = await axios.delete(url + "/" + index);
@@ -33,6 +30,7 @@ export default function Nature() {
       console.error(error);
     }
   };
+
   const addPicture = async (index) => {
     console.log(url + "/" + index);
     try {
@@ -41,41 +39,61 @@ export default function Nature() {
       });
       console.log(response.data);
       fetchData();
-      setInput("")
+      setInput("");
     } catch (error) {
       console.error(error);
+    }
+  };
+
+  const handleStatus = async (park) => {
+    if (!park.status || park.status == "pending") {
+      try {
+        const response = await axios.put(url + "/" + park.id, {
+          status: "approved",
+        });
+        fetchData()
+        console.log(park.status);
+      } catch (error) {
+        console.error(error);
+      }
     }
   };
   return (
     <div id="Nature" className="pages-light">
       <div id="parks-list">
-        {console.log(parks)}
-
-        {parks?.map((park, index) => {
-          return (
-            <div key={index} className="park-card">
+        {parks?.map(
+          (park, index) =>
+            park.status !== "approved" && (
+              <div key={index} className="park-card">
                 <button onClick={() => deletePark(park.id)}>X</button>
-              <img
-                src={park.pictures ? park.pictures[0] : null}
-                alt={park.name}
-              />
-              <p>
-                id: {park.id} {index}
-              </p>
-              <p>park.pictures</p>
-              <h2>{park.name}</h2>
-              <a
-                href={park.location.direction}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                direction
-              </a>
-              <input type="text" onChange={(e) => setInput(e.target.value)} />
-              <button onClick={() => addPicture(park.id)}>add</button>
-            </div>
-          );
-        })}
+                <img
+                  src={park.pictures ? park.pictures[0] : null}
+                  alt={park.name}
+                />
+                <p>
+                  id: {park.id} {index}
+                </p>
+                <p>park.pictures</p>
+                <h2>{park.name}</h2>
+                <button
+                  onClick={() => {
+                    handleStatus(park);
+                  }}
+                >
+                  {park.status ? park.status : "not yet"}
+                </button>
+                <a
+                  href={park.location.direction}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  direction
+                </a>
+                <input type="text" onChange={(e) => setInput(e.target.value)} />
+                <button onClick={() => addPicture(park.id)}>add</button>
+              </div>
+            )
+        )}
       </div>
     </div>
   );

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { useTheme } from "../../context/ThemeContext";
 import useParks from "../../hooks/useParks";
 import { RotateLoader } from "react-spinners";
@@ -24,7 +24,6 @@ export default function Homepage() {
   return (
     <div id="Homepage" className={theme ? "pages-light" : "pages-dark"}>
       <h1>Parks List</h1>
-      {/* {console.log(state)} */}
       <div id="cities-list">
         {state?.state?.map((dist, index) => (
           <button
@@ -35,38 +34,50 @@ export default function Homepage() {
           </button>
         ))}
       </div>
-      {loading ? (
-        <div id="loading">
-          <RotateLoader />
-        </div>
+      {error ? (
+        <h1>{error.message}</h1>
       ) : (
-        <div id="parks-list">
-          {console.log(parksList)}
-          {filterParksList?.length == 0 && (
-            <div>
-              <h3>Empty List. you can add <h1>Parks</h1> and <h1>Nature Places</h1> <Link to="/addPark">here</Link> </h3>
-              
+        <div>
+          {loading ? (
+            <div id="loading">
+              <RotateLoader />
+            </div>
+          ) : (
+            <div id="parks-list">
+              {/* when clicking on the list of aside component */}
+              {/* if clicked ? */}
+              {state?.state ? (
+                filterParksList?.length == 0 ? ( //empty list of parks
+                  <div>
+                    <h3>
+                      Empty List. you can add <h1>Parks</h1> and{" "}
+                      <h1>Nature Places</h1> <Link to="/AddPark">here</Link>{" "}
+                    </h3>
+                  </div>
+                ) : (
+                  filterParksList?.map((park, index) => {
+                    // not empty. show the list of parks filtered by clicked state or city
+                    return (
+                      <div key={index} className="park-card">
+                        <img src={park.pictures} alt={park.name} />
+                        <h2>{park.name}</h2>
+                      </div>
+                    );
+                  })
+                )
+              ) : (
+                parksList?.map((park, index) => {
+                  // if not clicking on aside list, show all the list
+                  return (
+                    <div key={index} className="park-card">
+                      <img src={park.pictures} alt={park.name} />
+                      <h2>{park.name}</h2>
+                    </div>
+                  );
+                })
+              )}
             </div>
           )}
-          {console.log(filterParksList)}
-          {state?.state &&
-            filterParksList?.map((park, index) => {
-              return (
-                <div key={index} className="park-card">
-                  <img src={park.pictures} alt={park.name} />
-                  <h2>{park.name}</h2>
-                </div>
-              );
-            })}
-          {!state?.state &&
-            parksList?.map((park, index) => {
-              return (
-                <div key={index} className="park-card">
-                  <img src={park.pictures} alt={park.name} />
-                  <h2>{park.name}</h2>
-                </div>
-              );
-            })}
         </div>
       )}
     </div>
