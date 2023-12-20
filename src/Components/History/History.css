@@ -1,0 +1,25 @@
+#History #clear{
+    width: 20px;
+    margin: 10px;
+}
+#History #history-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px;
+}
+#History .history-card{
+ border: 2px solid;
+ padding: 20px;
+ display: flex;
+ flex-direction: column;
+ /* width: 500px; */
+}
+#History .history-card img{
+    max-width: 200px;
+    height: 150px;
+    margin: 10px;
+}

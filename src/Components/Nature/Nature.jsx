@@ -71,7 +71,7 @@ export default function Nature() {
                   alt={park.name}
                 />
                 <p>
-                  id: {park.id} {index}
+                  id: {park.id}
                 </p>
                 <p>park.pictures</p>
                 <h2>{park.name}</h2>
@@ -83,7 +83,7 @@ export default function Nature() {
                   {park.status ? park.status : "pending"}
                 </button>
                 <a
-                  href={park.location.direction}
+                  href={park?.location?.direction ? park.location.direction : null}
                   target="_blank"
                   rel="noopener noreferrer"
                 >

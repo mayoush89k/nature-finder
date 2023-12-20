@@ -1,871 +1,1101 @@
 [
-    {
-      "name": "Ayalon Canada Park",
-      "location": {
-        "city": "Modi'in",
-        "state": "Central Israel",
-        "direction":"https://www.google.com/maps/dir/31.821688,35.2258358/31.8379,34.9967/@31.8106156,35.0287392,12z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0?entry=ttu"
-      },
-      "description": "A park with historical sites and natural beauty.",
-      "activities": ["Picnicking", "Hiking", "Historical tours"],
-      "pictures":["https://en.wikipedia.org/wiki/File:PikiWiki_30602_Geography_of_Canada_Park.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Canada_park_lake.JPG/375px-Canada_park_lake.JPG"],
-  "id":"83"
-  },
   {
-      "name": "Eshkol National Park",
-      "location": {
-        "city": "Be'er Sheva",
-        "state": "Southern Israel",
-        "direction":"https://www.google.com/maps/dir/31.821688,35.2258358/31.29101,34.43218/@31.5160827,34.7708608,10z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0?entry=ttu"
-      },
-      "description":
-        "Nature reserve with unique flora and fauna in the Negev Desert.",
-      "activities": ["Nature walks", "Wildlife observation", "Photography"],
-      "pictures":["https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/PikiWiki_Israel_19167_Blooming_in_Eshkol_Park.JPG/426px-PikiWiki_Israel_19167_Blooming_in_Eshkol_Park.JPG","https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/62-0246-001_moran_pirani.jpg/330px-62-0246-001_moran_pirani.jpg"],
-    "id":"1"
-  },
-    {
-      "name": "Horshat Tal National Park",
-      "location": {
-        "city": "Kiryat Shmona",
-        "state": "Northern Israel"
-      },
-      "description": "A pine forest park with picnic areas and walking trails.",
-      "activities": ["Picnicking", "Hiking", "Nature walks"],
-      "pictures":["https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Horshat_Tal.jpg/330px-Horshat_Tal.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Swiming_pool%27_horshat_tal%27_israel.JPG/330px-Swiming_pool%27_horshat_tal%27_israel.JPG"],
-    "id":"2"
-  },
-    {
-      "name": "Nimrod Fortress National Park",
-      "location": {
-        "city": "Golan Heights",
-        "state": "Northern Israel"
-      },
-      "description":
-        "Medieval fortress with panoramic views of the surrounding landscapes.",
-      "activities": ["Historical tours", "Scenic viewpoints", "Hiking"],
-    "id":"3"
-  },
-    {
-      "name": "Nahal Kziv",
-      "location": {
-        "city": "Nahariya",
-        "state": "Northern Israel"
-      },
-      "description": "A river with hiking trails and lush greenery.",
-      "activities": ["Hiking", "Nature walks", "Picnicking"],
-    "id":"4"
-  },
-    {
-      "name": "HaBonim Beach Nature Reserve",
-      "location": {
-        "city": "Zichron Yaakov",
-        "state": "Northern Israel"
-      },
-      "description":
-        "A coastal reserve with sand dunes, cliffs, and archaeological sites.",
-      "activities": ["Beachcombing", "Hiking", "Nature walks"],
-    "id":"5"
-  },
-    {
-      "name": "Mount Tabor",
-      "location": {
-        "city": "Nazareth",
-        "state": "Northern Israel"
-      },
-      "description":
-        "A prominent mountain with religious and historical significance.",
-      "activities": ["Hiking", "Religious pilgrimages", "Scenic viewpoints"],
-    "id":"6"
-  },
-  {
-      "name": "Havat Hananiah",
-      "location": {
-        "city": "Petah Tikva",
-        "state": "Central Israel"
-      },
-      "description": "A nature reserve with a variety of plant and animal species.",
-      "activities": ["Nature walks", "Birdwatching", "Educational programs"],
-    "id":"7"
-  },
-  {
-      "name": "Nahal Amud",
-      "location": {
-        "city": "Safed",
-        "state": "Northern Israel"
-      },
-      "description": "A stream with scenic views and hiking trails.",
-      "activities": ["Hiking", "Nature walks", "Picnicking"],
-    "id":"8"
-  },
-  {
-      "name": "Nahal Tavor",
-      "location": {
-        "city": "Afula",
-        "state": "Northern Israel"
-      },
-      "description": "A river with waterfalls and lush vegetation.",
-      "activities": ["Hiking", "Nature walks", "Photography"],
-    "id":"9"
-  },
-  {
-      "name": "Nahal Hashofet",
-      "location": {
-        "city": "Kiryat Tivon",
-        "state": "Northern Israel"
-      },
-      "description": "A stream with natural pools and hiking opportunities.",
-      "activities": ["Hiking", "Nature walks", "Swimming"],
-    "id":"10"
-  },
-  {
-      "name": "Nahal Dishon",
-      "location": {
-        "city": "Kiryat Shmona",
-        "state": "Northern Israel"
-      },
-      "description": "A picturesque stream with waterfalls and green landscapes.",
-      "activities": ["Hiking", "Nature walks", "Photography"],
-    "id":"11"
-  },
-  {
-      "name": "HaMa'ayanot Park",
-      "location": {
-        "city": "Kfar Saba",
-        "state": "Central Israel"
-      },
-      "description": "A park with springs and walking trails.",
-      "activities": ["Nature walks", "Picnicking", "Birdwatching"],
-    "id":"12"
-  },
-  {
-      "name": "Nahal Alexander Archaeological Park",
-      "location": {
-        "city": "Netanya",
-        "state": "Central Israel"
-      },
-      "description": "An archaeological site with ancient remains along the river.",
-      "activities": [
-        "Archaeological tours",
-        "Nature walks",
-        "Historical exploration"
-      ],
-    "id":"13"
-  },
-  {
-      "name": "Kiryat Ata Forest",
-      "location": {
-        "city": "Kiryat Ata",
-        "state": "Northern Israel"
-      },
-      "description": "A forested area with hiking and biking trails.",
-      "activities": ["Hiking", "Biking", "Nature walks"],
-    "id":"14"
-  },
-  {
-      "name": "Ein Hemed National Park",
-      "location": {
-        "city": "Jerusalem",
-        "state": "Central Israel"
-      },
-      "description": "A park with a spring, historical ruins, and natural beauty.",
-      "activities": ["Picnicking", "Hiking", "Historical tours"],
-    "id":"15"
-  },
-  {
-      "name": "Nahal Ayun",
-      "location": {
-        "city": "Rosh Pina",
-        "state": "Northern Israel"
-      },
-      "description": "A river with waterfalls and a nature reserve.",
-      "activities": ["Hiking", "Nature walks", "Photography"],
-    "id":"16"
-  },
-  {
-      "name": "Masada National Park",
-      "location": {
-        "city": "Dead Sea",
-        "state": "Southern Israel"
-      },
-      "description":
-        "Famous for its ancient fortress and stunning views of the Dead Sea.",
-      "activities": ["Historical tours", "Hiking", "Scenic viewpoints"],
-    "id":"17"
-  },
-  {
-      "name": "Banias Nature Reserve",
-      "location": {
-        "city": "Golan Heights",
-        "state": "Northern Israel"
-      },
-      "description":
-        "Home to lush landscapes, waterfalls, and archaeological sites.",
-      "activities": ["Hiking", "Nature walks", "Birdwatching"],
-    "id":"18"
-  },
-  {
-      "name": "Ein Gedi Nature Reserve",
-      "location": {
-        "city": "Dead Sea",
-        "state": "Southern Israel"
-      },
-      "description":
-        "An oasis with waterfalls, hiking trails, and diverse wildlife.",
-      "activities": ["Hiking", "Swimming", "Wildlife observation"],
-      "id":"81"
+    "name": "Eshkol National Park",
+    "location": {
+      "city": "Be'er Sheva",
+      "state": "Southern Israel",
+      "direction": "https://www.google.com/maps/dir/31.821688,35.2258358/31.29101,34.43218/@31.5160827,34.7708608,10z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0?entry=ttu"
     },
-    {
-      "name": "Hermon Stream Nature Reserve",
-      "location": {
-        "city": "Kiryat Shmona",
-        "state": "Northern Israel"
-      },
-      "description": "A picturesque reserve with flowing streams and waterfalls.",
-      "activities": ["Picnicking", "Hiking", "Nature walks"],
-    "id":"19"
+    "description": "Nature reserve with unique flora and fauna in the Negev Desert.",
+    "activities": ["Nature walks", "Wildlife observation", "Photography"],
+    "pictures": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/PikiWiki_Israel_19167_Blooming_in_Eshkol_Park.JPG/426px-PikiWiki_Israel_19167_Blooming_in_Eshkol_Park.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/62-0246-001_moran_pirani.jpg/330px-62-0246-001_moran_pirani.jpg",
+      "https://thumbs.dreamstime.com/b/visit-to-eshkol-national-park-habsor-94764954.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/PikiWiki_Israel_19167_Blooming_in_Eshkol_Park.JPG/426px-PikiWiki_Israel_19167_Blooming_in_Eshkol_Park.JPG"
+    ],
+    "id": "1",
+    "status": "approved"
   },
   {
-      "name": "Beit She'an National Park",
-      "location": {
-        "city": "Beit She'an",
-        "state": "Northern Israel"
-      },
-      "description":
-        "Ancient city ruins with historical and archaeological significance.",
-      "activities": ["Archaeological tours", "Historical exploration"],
-    "id":"20"
-  },
-  {
-      "name": "Nahal Me'arot Nature Reserve",
-      "location": {
-        "city": "Haifa",
-        "state": "Northern Israel"
-      },
-      "description": "Cave complex with prehistoric human remains and artifacts.",
-      "activities": ["Cave exploration", "Nature walks"],
-    "id":"21"
-  },
-  {
-      "name": "Beit Alfa Synagogue National Park",
-      "location": {
-        "city": "Beit She'an",
-        "state": "Northern Israel"
-      },
-      "description": "Home to a beautifully preserved ancient synagogue mosaic.",
-      "activities": ["Historical tours", "Cultural exploration"],
-    "id":"22"
-  },
-  {
-      "name": "Tel Hazor National Park",
-      "location": {
-        "city": "Kiryat Shmona",
-        "state": "Northern Israel"
-      },
-      "description":
-        "One of the largest archaeological sites in Israel with ancient city ruins.",
-      "activities": ["Archaeological tours", "Historical exploration"],
-    "id":"23"
-  },
-  {
-      "name": "Nahal Alexander",
-      "location": {
-        "city": "Netanya",
-        "state": "Central Israel"
-      },
-      "description": "A river with scenic walking and biking trails.",
-      "activities": ["Biking", "Nature walks", "Picnicking"],
-      "id":"82"
+    "name": "Horshat Tal National Park",
+    "location": {
+      "city": "Kiryat Shmona",
+      "state": "Northern Israel"
     },
-  
-    {
-      "name": "Mount Meron",
-      "location": {
-        "city": "Safed",
-        "state": "Northern Israel"
-      },
-      "description":
-        "The highest peak in Israel with hiking trails and panoramic views.",
-      "activities": ["Hiking", "Scenic viewpoints", "Nature walks"],
-    "id":"24"
+    "description": "A pine forest park with picnic areas and walking trails.",
+    "activities": ["Picnicking", "Hiking", "Nature walks"],
+    "pictures": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Horshat_Tal.jpg/330px-Horshat_Tal.jpg",
+      "https://tse1.mm.bing.net/th?id=OIP.9wB0Ja5k83ehaRRMrCEEbwHaFj&pid=Api&P=0&h=220",
+      "https://tse2.mm.bing.net/th?id=OIP.6M1F5T2WE0Jki2FbmGgIGAHaEh&pid=Api&P=0&h=220",
+      "https://tse4.mm.bing.net/th?id=OIP.Lulguk7Vc_05uUiqfC9lSwHaEK&pid=Api&P=0&h=220",
+      "https://tse1.mm.bing.net/th?id=OIP.wJdSB4i84Khgr11LfpLm5QHaDU&pid=Api&P=0&h=220",
+      "https://tse2.mm.bing.net/th?id=OIP.MqxgHPcwH9bgyToQUd1t_AHaEI&pid=Api&P=0&h=220"
+    ],
+    "id": "2",
+    "status": "approved"
   },
   {
-      "name": "Nahal Snir",
-      "location": {
-        "city": "Kiryat Shmona",
-        "state": "Northern Israel"
-      },
-      "description":
-        "A river with crystal-clear water and picturesque surroundings.",
-      "activities": ["Hiking", "Nature walks", "Swimming"],
-    "id":"25"
+    "name": "Nimrod Fortress National Park",
+    "location": {
+      "city": "Golan Heights",
+      "state": "Northern Israel"
+    },
+    "description": "Medieval fortress with panoramic views of the surrounding landscapes.",
+    "activities": ["Historical tours", "Scenic viewpoints", "Hiking"],
+    "id": "3",
+    "pictures": [
+      "http://www.israel-in-photos.com/wp-content/uploads/2014/07/D7-9E-D7-91-D7-A6-D7-A8-D7-A0-D7-9E-D7-A8-D7-95-D7-93-Nimrod-Fortress-42.jpg",
+      "https://www.israel-in-photos.com/wp-content/uploads/2014/07/D7-9E-D7-91-D7-A6-D7-A8-D7-A0-D7-9E-D7-A8-D7-95-D7-93-Nimrod-Fortress-22.jpg",
+      "https://tse4.mm.bing.net/th?id=OIP.5IPVPGjlm5l9Q-4TbQVlqQHaE8&pid=Api&P=0&h=220",
+      "https://tse3.mm.bing.net/th?id=OIP.OqbcMKuCLM9laFzyDfq9BwHaE8&pid=Api&P=0&h=220"
+    ],
+    "status": "approved"
   },
   {
-      "name": "Ashkelon National Park",
-      "location": {
-        "city": "Ashkelon",
-        "state": "Southern Israel"
-      },
-      "description": "Ancient port city ruins with archaeological significance.",
-      "activities": ["Archaeological tours", "Beachcombing"],
-    "id":"26"
+    "name": "Nahal Kziv",
+    "location": {
+      "city": "Nahariya",
+      "state": "Northern Israel"
+    },
+    "description": "A river with hiking trails and lush greenery.",
+    "activities": ["Hiking", "Nature walks", "Picnicking"],
+    "id": "4",
+    "pictures": [
+      "https://sp.yimg.com/ib/th?id=OIP.ydJcJW5SWRhh8wd-D2F_RAAAAA&pid=Api&w=148&h=148&c=7&dpr=2&rs=1"
+    ],
+    "status": "approved"
   },
   {
-      "name": "Beit Guvrin-Maresha National Park",
-      "location": {
-        "city": "Maresha",
-        "state": "Central Israel"
-      },
-      "description":
-        "Known for its unique caves, archaeological sites, and ancient burial grounds.",
-      "activities": ["Cave exploration", "Historical tours", "Nature walks"],
-    "id":"27"
+    "name": "HaBonim Beach Nature Reserve",
+    "location": {
+      "city": "Zichron Yaakov",
+      "state": "Northern Israel"
+    },
+    "description": "A coastal reserve with sand dunes, cliffs, and archaeological sites.",
+    "activities": ["Beachcombing", "Hiking", "Nature walks"],
+    "id": "5",
+    "pictures": [
+      "https://d6qyz3em3b312.cloudfront.net/upload/images/media/2019/10/21/shutterstock_1386594932.2048x1024.jpg"
+    ],
+    "status": "approved"
   },
   {
-      "name": "Adulam Caves National Park",
-      "location": {
-        "city": "Beit Shemesh",
-        "state": "Central Israel"
-      },
-      "description":
-        "A complex of caves with archaeological and geological significance.",
-      "activities": ["Cave exploration", "Nature walks", "Photography"],
-    "id":"28"
+    "name": "Mount Tabor",
+    "location": {
+      "city": "Nazareth",
+      "state": "Northern Israel"
+    },
+    "description": "A prominent mountain with religious and historical significance.",
+    "activities": ["Hiking", "Religious pilgrimages", "Scenic viewpoints"],
+    "id": "6",
+    "pictures": [
+      "https://tse2.mm.bing.net/th?id=OIP.mtCxi-_LGbETZxCMrxUNFwHaE8&pid=Api&P=0&h=220"
+    ],
+    "status": "approved"
   },
   {
-      "name": "Nahal Taninim",
-      "location": {
-        "city": "Zichron Yaakov",
-        "state": "Northern Israel"
-      },
-      "description": "A river with lush vegetation, waterfalls, and natural pools.",
-      "activities": ["Hiking", "Nature walks", "Swimming"],
-    "id":"29"
+    "name": "Nahal Amud",
+    "location": {
+      "city": "Safed",
+      "state": "Northern Israel"
+    },
+    "description": "A stream with scenic views and hiking trails.",
+    "activities": ["Hiking", "Nature walks", "Picnicking"],
+    "id": "8",
+    "pictures": [
+      "https://tse1.mm.bing.net/th?id=OIP.T0M0dxjOweHIEVBorBKUXQHaEL&pid=Api&P=0&h=220"
+    ],
+    "status": "approved"
   },
   {
-      "name": "Nahal Tzalmon",
-      "location": {
-        "city": "Kiryat Shmona",
-        "state": "Northern Israel"
-      },
-      "description": "A river with waterfalls and a nature reserve.",
-      "activities": ["Hiking", "Nature walks", "Photography"],
-    "id":"30"
+    "name": "Nahal Tavor",
+    "location": {
+      "city": "Afula",
+      "state": "Northern Israel"
+    },
+    "description": "A river with waterfalls and lush vegetation.",
+    "activities": ["Hiking", "Nature walks", "Photography"],
+    "id": "9",
+    "pictures": [
+      "https://tse1.mm.bing.net/th?id=OIP.ZA3NP0o074fLNdLkFdtBuQHaFj&pid=Api&P=0&h=220"
+    ],
+    "status": "approved"
   },
   {
-      "name": "Nahal Og",
-      "location": {
-        "city": "Kibbutz Nir David",
-        "state": "Northern Israel"
-      },
-      "description": "A stream with waterfalls and natural pools.",
-      "activities": ["Hiking", "Nature walks", "Swimming"],
-    "id":"31"
+    "name": "Nahal Hashofet",
+    "location": {
+      "city": "Kiryat Tivon",
+      "state": "Northern Israel"
+    },
+    "description": "A stream with natural pools and hiking opportunities.",
+    "activities": ["Hiking", "Nature walks", "Swimming"],
+    "id": "10",
+    "pictures": [
+      "https://tse4.mm.bing.net/th?id=OIP.j_H7E1nMDubVWEhtG2E3RwHaFL&pid=Api&P=0&h=220"
+    ],
+    "status": "approved"
   },
   {
-      "name": "Nahal HaShofet",
-      "location": {
-        "city": "Kiryat Tivon",
-        "state": "Northern Israel"
-      },
-      "description": "A stream with waterfalls and lush greenery.",
-      "activities": ["Hiking", "Nature walks", "Picnicking"],
-    "id":"32"
+    "name": "Nahal Dishon",
+    "location": {
+      "city": "Kiryat Shmona",
+      "state": "Northern Israel"
+    },
+    "description": "A picturesque stream with waterfalls and green landscapes.",
+    "activities": ["Hiking", "Nature walks", "Photography"],
+    "id": "11",
+    "pictures": [
+      "https://tse4.mm.bing.net/th?id=OIP.9uL78NJ31dY5ZAocKvBoggHaEo&pid=Api&P=0&h=220"
+    ],
+    "status": "approved"
   },
   {
-      "name": "Nahal Galim",
-      "location": {
-        "city": "Hadera",
-        "state": "Central Israel"
-      },
-      "description": "A river with hiking trails and scenic views.",
-      "activities": ["Hiking", "Nature walks", "Photography"],
-    "id":"33"
+    "name": "HaMa'ayanot Park",
+    "location": {
+      "city": "Kfar Saba",
+      "state": "Central Israel"
+    },
+    "description": "A park with springs and walking trails.",
+    "activities": ["Nature walks", "Picnicking", "Birdwatching"],
+    "id": "12",
+    "pictures": [
+      "https://tse3.mm.bing.net/th?id=OIP.r_XZIyfOZnrvoT-BPzYxMQHaEK&pid=Api&P=0&h=220"
+    ],
+    "status": "approved"
   },
   {
-      "name": "Keshet Cave",
-      "location": {
-        "city": "Western Galilee",
-        "state": "Northern Israel"
-      },
-      "description": "A cave with a natural arch and stunning rock formations.",
-      "activities": ["Cave exploration", "Nature walks", "Photography"],
-    "id":"34"
+    "name": "Nahal Alexander Archaeological Park",
+    "location": {
+      "city": "Netanya",
+      "state": "Central Israel"
+    },
+    "description": "An archaeological site with ancient remains along the river.",
+    "activities": [
+      "Archaeological tours",
+      "Nature walks",
+      "Historical exploration"
+    ],
+    "id": "13",
+    "pictures": [
+      "https://tse2.mm.bing.net/th?id=OIP.-KBPekVe0ge6hL_GJBMXuAHaFj&pid=Api&P=0&h=220"
+    ],
+    "status": "approved"
   },
   {
-      "name": "Nahal Kadesh",
-      "location": {
-        "city": "Safed",
-        "state": "Northern Israel"
-      },
-      "description": "A river with waterfalls and a nature reserve.",
-      "activities": ["Hiking", "Nature walks", "Photography"],
-    "id":"35"
+    "name": "Kiryat Ata Forest",
+    "location": {
+      "city": "Kiryat Ata",
+      "state": "Northern Israel"
+    },
+    "description": "A forested area with hiking and biking trails.",
+    "activities": ["Hiking", "Biking", "Nature walks"],
+    "id": "14",
+    "pictures": [
+      "https://tse1.mm.bing.net/th?id=OIP.SePEBXJWk1E_-2F0hlARcgHaEL&pid=Api&P=0&h=220"
+    ],
+    "status": "approved"
   },
   {
-      "name": "Nahal Mearot",
-      "location": {
-        "city": "Haifa",
-        "state": "Northern Israel"
-      },
-      "description": "A river with hiking trails and archaeological sites.",
-      "activities": ["Hiking", "Nature walks", "Archaeological tours"],
-    "id":"36"
+    "name": "Ein Hemed National Park",
+    "location": {
+      "city": "Jerusalem",
+      "state": "Central Israel"
+    },
+    "description": "A park with a spring, historical ruins, and natural beauty.",
+    "activities": ["Picnicking", "Hiking", "Historical tours"],
+    "id": "15",
+    "pictures": [
+      "https://tse2.mm.bing.net/th?id=OIP.N5gDn7eybBboBbjbNLM_WQHaC3&pid=Api&P=0&h=220"
+    ],
+    "status": "approved"
   },
   {
-      "name": "Nahal Rosh Pina",
-      "location": {
-        "city": "Rosh Pina",
-        "state": "Northern Israel"
-      },
-      "description": "A river with waterfalls and a nature reserve.",
-      "activities": ["Hiking", "Nature walks", "Photography"],
-    "id":"37"
+    "name": "Nahal Ayun",
+    "location": {
+      "city": "Rosh Pina",
+      "state": "Northern Israel"
+    },
+    "description": "A river with waterfalls and a nature reserve.",
+    "activities": ["Hiking", "Nature walks", "Photography"],
+    "id": "16",
+    "pictures": [
+      "https://tse3.explicit.bing.net/th?id=OIP.1qp1e8GFR0V9M5nCdgKGQAAAAA&pid=Api&P=0&h=220"
+    ],
+    "status": "approved"
   },
   {
-      "name": "Ein Ovdat",
-      "location": {
-        "city": "Negev",
-        "state": "Southern Israel"
-      },
-      "description": "A desert oasis with waterfalls and hiking trails.",
-      "activities": ["Hiking", "Nature walks", "Photography"],
-    "id":"38"
+    "name": "Masada National Park",
+    "location": {
+      "city": "Dead Sea",
+      "state": "Southern Israel"
+    },
+    "description": "Famous for its ancient fortress and stunning views of the Dead Sea.",
+    "activities": ["Historical tours", "Hiking", "Scenic viewpoints"],
+    "id": "17",
+    "pictures": [
+      "https://tse2.mm.bing.net/th?id=OIP.KKQoIgEKi6wT5fWOrl9xZAHaC4&pid=Api&P=0&h=220"
+    ],
+    "status": "approved"
   },
   {
-      "name": "Yam Tzuk Beach",
-      "location": {
-        "city": "Netanya",
-        "state": "Central Israel"
-      },
-      "description": "A beach with white cliffs and clear blue water.",
-      "activities": ["Beachcombing", "Swimming", "Picnicking"],
-    "id":"39"
+    "name": "Banias Nature Reserve",
+    "location": {
+      "city": "Golan Heights",
+      "state": "Northern Israel"
+    },
+    "description": "Home to lush landscapes, waterfalls, and archaeological sites.",
+    "activities": ["Hiking", "Nature walks", "Birdwatching"],
+    "id": "18",
+    "pictures": [
+      "https://tse1.mm.bing.net/th?id=OIP.eT1zngWoZKb9gaawDxM-DgHaE8&pid=Api&P=0&h=220"
+    ],
+    "status": "approved"
   },
   {
-      "name": "Hula Valley Nature Reserve",
-      "location": {
-        "city": "Hula",
-        "state": "Northern Israel"
-      },
-      "description":
-        "A major birdwatching site with diverse avian species and wetland habitats.",
-      "activities": ["Birdwatching", "Nature walks", "Educational programs"],
-    "id":"40"
+    "name": "Hermon Stream Nature Reserve",
+    "location": {
+      "city": "Kiryat Shmona",
+      "state": "Northern Israel"
+    },
+    "description": "A picturesque reserve with flowing streams and waterfalls.",
+    "activities": ["Picnicking", "Hiking", "Nature walks"],
+    "id": "19",
+    "pictures": [
+      "https://tse1.mm.bing.net/th?id=OIP.gdKEWAETF2-3ypWbl8wd8QHaE8&pid=Api&P=0&h=220"
+    ],
+    "status": "approved"
   },
   {
-      "name": "Nahal Zin",
-      "location": {
-        "city": "Negev",
-        "state": "Southern Israel"
-      },
-      "description":
-        "A canyon with hiking trails and unique geological formations.",
-      "activities": ["Hiking", "Nature walks", "Photography"],
-    "id":"41"
+    "name": "Beit She'an National Park",
+    "location": {
+      "city": "Beit She'an",
+      "state": "Northern Israel"
+    },
+    "description": "Ancient city ruins with historical and archaeological significance.",
+    "activities": ["Archaeological tours", "Historical exploration"],
+    "id": "20",
+    "pictures": [
+      "https://tse3.mm.bing.net/th?id=OIP.0y6GWA-avmTHjTJ3_NSUZAHaEv&pid=Api&P=0&h=220"
+    ],
+    "status": "approved"
   },
   {
-      "name": "Tel Dan Nature Reserve",
-      "location": {
-        "city": "Tel Dan",
-        "state": "Northern Israel"
-      },
-      "description":
-        "Archaeological and nature reserve with a flowing river and lush landscapes.",
-      "activities": ["Archaeological tours", "Nature walks", "Birdwatching"],
-    "id":"42"
+    "name": "Nahal Me'arot Nature Reserve",
+    "location": {
+      "city": "Haifa",
+      "state": "Northern Israel"
+    },
+    "description": "Cave complex with prehistoric human remains and artifacts.",
+    "activities": ["Cave exploration", "Nature walks"],
+    "id": "21",
+    "pictures": [
+      "https://tse3.mm.bing.net/th?id=OIP.SfWZrDmGLOrwIIkQroIHpwHaFj&pid=Api&P=0&h=220"
+    ],
+    "status": "approved"
   },
   {
-      "name": "Mount Arbel National Park",
-      "location": {
-        "city": "Tiberias",
-        "state": "Northern Israel"
-      },
-      "description":
-        "A mountain with hiking trails and panoramic views of the Sea of Galilee.",
-      "activities": ["Hiking", "Scenic viewpoints", "Nature walks"],
-    "id":"43"
+    "name": "Beit Alfa Synagogue National Park",
+    "location": {
+      "city": "Beit She'an",
+      "state": "Northern Israel"
+    },
+    "description": "Home to a beautifully preserved ancient synagogue mosaic.",
+    "activities": ["Historical tours", "Cultural exploration"],
+    "id": "22",
+    "pictures": [
+      "https://www.israel-in-photos.com/wp-content/uploads/2015/02/%D7%91%D7%99%D7%AA-%D7%9B%D7%A0%D7%A1%D7%AA-%D7%91%D7%99%D7%AA-%D7%90%D7%9C%D7%A4%D7%90-Bet-Alfa-Synagogue-6.jpg"
+    ],
+    "status": "approved"
   },
   {
-      "name": "Hof Hasharon National Park",
-      "location": {
-        "city": "Herzliya",
-        "state": "Central Israel"
-      },
-      "description": "A coastal park with sandy beaches and dunes.",
-      "activities": ["Beachcombing", "Swimming", "Picnicking"],
-    "id":"44"
+    "name": "Tel Hazor National Park",
+    "location": {
+      "city": "Kiryat Shmona",
+      "state": "Northern Israel"
+    },
+    "description": "One of the largest archaeological sites in Israel with ancient city ruins.",
+    "activities": ["Archaeological tours", "Historical exploration"],
+    "id": "23",
+    "pictures": [
+      "https://tse3.mm.bing.net/th?id=OIP.26bl0FBgVS0eAiekzhSVVwHaE7&pid=Api&P=0&h=220"
+    ],
+    "status": "approved"
   },
   {
-      "name": "Timna Park",
-      "location": {
-        "city": "Eilat",
-        "state": "Southern Israel"
-      },
-      "description":
-        "Known for unique rock formations, ancient copper mines, and desert landscapes.",
-      "activities": ["Hiking", "Archaeological tours", "Scenic viewpoints"],
-    "id":"45"
+    "name": "Mount Meron",
+    "location": {
+      "city": "Safed",
+      "state": "Northern Israel"
+    },
+    "description": "The highest peak in Israel with hiking trails and panoramic views.",
+    "activities": ["Hiking", "Scenic viewpoints", "Nature walks"],
+    "id": "24",
+    "pictures": [
+      "https://tse1.mm.bing.net/th?id=OIP.kWyQAVBIFxfcqsehbs3_0gHaET&pid=Api&P=0&h=220"
+    ],
+    "status": "approved"
   },
   {
-      "name": "Beit She'an Valley",
-      "location": {
-        "city": "Beit She'an",
-        "state": "Northern Israel"
-      },
-      "description": "A valley with historical sites and agricultural landscapes.",
-      "activities": ["Historical exploration", "Nature walks", "Photography"],
-    "id":"46"
+    "name": "Nahal Snir",
+    "location": {
+      "city": "Kiryat Shmona",
+      "state": "Northern Israel"
+    },
+    "description": "A river with crystal-clear water and picturesque surroundings.",
+    "activities": ["Hiking", "Nature walks", "Swimming"],
+    "id": "25",
+    "pictures": [
+      "https://tse3.mm.bing.net/th?id=OIP.jX-Lz4cgYL6GwQ4c5-QibAHaFj&pid=Api&P=0&h=220"
+    ],
+    "status": "approved"
   },
   {
-      "name": "Mount Carmel National Park",
-      "location": {
-        "city": "Haifa",
-        "state": "Northern Israel"
-      },
-      "description":
-        "Boasts a diverse range of ecosystems, including forests and Mediterranean landscapes.",
-      "activities": ["Hiking", "Nature walks", "Scenic viewpoints"],
-    "id":"47"
+    "name": "Ashkelon National Park",
+    "location": {
+      "city": "Ashkelon",
+      "state": "Southern Israel"
+    },
+    "description": "Ancient port city ruins with archaeological significance.",
+    "activities": ["Archaeological tours", "Beachcombing"],
+    "id": "26",
+    "pictures": [
+      "https://tse4.mm.bing.net/th?id=OIP.WcCo6vU8tohywOpP4t35ewHaE2&pid=Api&P=0&h=220"
+    ],
+    "status": "approved"
   },
   {
-      "name": "Mount Hermon",
-      "location": {
-        "city": "Kiryat Shmona",
-        "state": "Northern Israel"
-      },
-      "description":
-        "The highest mountain in Israel, known for skiing in the winter.",
-      "activities": ["Skiing", "Hiking", "Scenic viewpoints"],
-    "id":"48"
+    "name": "Beit Guvrin-Maresha National Park",
+    "location": {
+      "city": "Maresha",
+      "state": "Central Israel"
+    },
+    "description": "Known for its unique caves, archaeological sites, and ancient burial grounds.",
+    "activities": ["Cave exploration", "Historical tours", "Nature walks"],
+    "id": "27",
+    "pictures": [
+      "https://tse3.mm.bing.net/th?id=OIP.LD5zAwL8P-dqdd-6SEtnqAHaE8&pid=Api&P=0&h=220"
+    ],
+    "status": "approved"
   },
   {
-      "name": "Mizpe Ramon",
-      "location": {
-        "city": "Mizpe Ramon",
-        "state": "Southern Israel"
-      },
-      "description":
-        "A crater with unique geological formations and desert landscapes.",
-      "activities": ["Hiking", "Scenic viewpoints", "Stargazing"],
-    "id":"49"
+    "name": "Adulam Caves National Park",
+    "location": {
+      "city": "Beit Shemesh",
+      "state": "Central Israel"
+    },
+    "description": "A complex of caves with archaeological and geological significance.",
+    "activities": ["Cave exploration", "Nature walks", "Photography"],
+    "id": "28",
+    "pictures": [
+      "https://tse3.mm.bing.net/th?id=OIP.x_NZ7xUngETZxitn0X4Q-AHaDr&pid=Api&P=0&h=220"
+    ],
+    "status": "approved"
   },
   {
-      "name": "Nahal Kadesh Barnea",
-      "location": {
-        "city": "Negev",
-        "state": "Southern Israel"
-      },
-      "description": "A canyon with colorful rock formations and hiking trails.",
-      "activities": ["Hiking", "Nature walks", "Photography"],
-    "id":"50"
+    "name": "Nahal Taninim",
+    "location": {
+      "city": "Zichron Yaakov",
+      "state": "Northern Israel"
+    },
+    "description": "A river with lush vegetation, waterfalls, and natural pools.",
+    "activities": ["Hiking", "Nature walks", "Swimming"],
+    "id": "29",
+    "pictures": [
+      "https://tse2.mm.bing.net/th?id=OIP.7cbxhDRKDWKRWC81Q9rb_gHaFj&pid=Api&P=0&h=220"
+    ],
+    "status": "approved"
   },
   {
-      "name": "Nahal Harod",
-      "location": {
-        "city": "Afula",
-        "state": "Northern Israel"
-      },
-      "description": "A stream with waterfalls and a nature reserve.",
-      "activities": ["Hiking", "Nature walks", "Photography"],
-    "id":"51"
+    "name": "Nahal Tzalmon",
+    "location": {
+      "city": "Kiryat Shmona",
+      "state": "Northern Israel"
+    },
+    "description": "A river with waterfalls and a nature reserve.",
+    "activities": ["Hiking", "Nature walks", "Photography"],
+    "id": "30",
+    "pictures": [
+      "https://tse3.mm.bing.net/th?id=OIP.b6M0UJQ1r5IQ8tqj_6Z2igHaCQ&pid=Api&P=0&h=220"
+    ],
+    "status": "approved"
   },
   {
-      "name": "Hamei Yoav",
-      "location": {
-        "city": "Ashdod",
-        "state": "Southern Israel"
-      },
-      "description": "Natural hot springs with therapeutic properties.",
-      "activities": ["Spa and wellness", "Nature walks", "Relaxation"],
-    "id":"52"
+    "name": "Nahal Og",
+    "location": {
+      "city": "Kibbutz Nir David",
+      "state": "Northern Israel"
+    },
+    "description": "A stream with waterfalls and natural pools.",
+    "activities": ["Hiking", "Nature walks", "Swimming"],
+    "id": "31",
+    "pictures": [
+      "https://tse1.mm.bing.net/th?id=OIP.oBwmZEp2QCVmkMSR73C00gHaE8&pid=Api&P=0&h=220"
+    ],
+    "status": "approved"
   },
   {
-      "name": "Nahal Betzet",
-      "location": {
-        "city": "Kiryat Shmona",
-        "state": "Northern Israel"
-      },
-      "description": "A river with waterfalls and hiking trails.",
-      "activities": ["Hiking", "Nature walks", "Photography"],
-    "id":"53"
+    "name": "Nahal Galim",
+    "location": {
+      "city": "Hadera",
+      "state": "Central Israel"
+    },
+    "description": "A river with hiking trails and scenic views.",
+    "activities": ["Hiking", "Nature walks", "Photography"],
+    "id": "33",
+    "pictures": [
+      "https://tse2.mm.bing.net/th?id=OIP.sxWhp6qiPV5fh6TDFCb_JgHaCQ&pid=Api&P=0&h=220"
+    ],
+    "status": "approved"
   },
   {
-      "name": "Nahal Tzafit",
-      "location": {
-        "city": "Negev",
-        "state": "Southern Israel"
-      },
-      "description": "A stream with scenic landscapes and hiking opportunities.",
-      "activities": ["Hiking", "Nature walks", "Photography"],
-    "id":"54"
+    "name": "Keshet Cave",
+    "location": {
+      "city": "Western Galilee",
+      "state": "Northern Israel"
+    },
+    "description": "A cave with a natural arch and stunning rock formations.",
+    "activities": ["Cave exploration", "Nature walks", "Photography"],
+    "id": "34",
+    "pictures": [
+      "https://tse4.mm.bing.net/th?id=OIP.o1A3nN5rUkbPY6V9aOtm9gHaE9&pid=Api&P=0&h=220"
+    ],
+    "status": "approved"
   },
   {
-      "name": "Nahal Daliyot",
-      "location": {
-        "city": "Kibbutz Dalia",
-        "state": "Northern Israel"
-      },
-      "description": "A river with unique rock formations and nature trails.",
-      "activities": ["Hiking", "Nature walks", "Photography"],
-    "id":"55"
+    "name": "Nahal Kadesh",
+    "location": {
+      "city": "Safed",
+      "state": "Northern Israel"
+    },
+    "description": "A river with waterfalls and a nature reserve.",
+    "activities": ["Hiking", "Nature walks", "Photography"],
+    "id": "35",
+    "pictures": [
+      "https://tse4.mm.bing.net/th?id=OIP.vURisPZzsxNvKJcrb6DnsAHaFj&pid=Api&P=0&h=220"
+    ],
+    "status": "approved"
   },
   {
-      "name": "Gan HaShlosha",
-      "location": {
-        "city": "Beit She'an",
-        "state": "Northern Israel"
-      },
-      "description": "Natural pools and water features in a beautiful setting.",
-      "activities": ["Swimming", "Picnicking", "Relaxation"],
-    "id":"56"
+    "name": "Nahal Mearot",
+    "location": {
+      "city": "Haifa",
+      "state": "Northern Israel"
+    },
+    "description": "A river with hiking trails and archaeological sites.",
+    "activities": ["Hiking", "Nature walks", "Archaeological tours"],
+    "id": "36",
+    "pictures": [
+      "https://tse2.mm.bing.net/th?id=OIP.I0OdUnKK5ENIpZmzkdCj1gHaE8&pid=Api&P=0&h=220"
+    ],
+    "status": "approved"
   },
   {
-      "name": "Tel Yodfat",
-      "location": {
-        "city": "Yodfat",
-        "state": "Northern Israel"
-      },
-      "description":
-        "Archaeological site with ancient ruins and historical significance.",
-      "activities": ["Archaeological tours", "Historical exploration"],
-    "id":"57"
+    "name": "Nahal Rosh Pina",
+    "location": {
+      "city": "Rosh Pina",
+      "state": "Northern Israel"
+    },
+    "description": "A river with waterfalls and a nature reserve.",
+    "activities": ["Hiking", "Nature walks", "Photography"],
+    "id": "37",
+    "pictures": [
+      "https://worldtravelling.com/wp-content/uploads/2020/09/rosh-pina-3-2048x1360.jpg"
+    ],
+    "status": "approved"
   },
   {
-      "name": "Nahal Ogla",
-      "location": {
-        "city": "Kibbutz Hulda",
-        "state": "Central Israel"
-      },
-      "description": "A river with waterfalls and scenic landscapes.",
-      "activities": ["Hiking", "Nature walks", "Photography"],
-    "id":"58"
+    "name": "Ein Ovdat",
+    "location": {
+      "city": "Negev",
+      "state": "Southern Israel"
+    },
+    "description": "A desert oasis with waterfalls and hiking trails.",
+    "activities": ["Hiking", "Nature walks", "Photography"],
+    "id": "38",
+    "pictures": [
+      "https://tse4.mm.bing.net/th?id=OIP.LSwbYtk-SN1QOUOVuF70FAHaFj&pid=Api&P=0&h=220"
+    ],
+    "status": "approved"
   },
   {
-      "name": "Kurkar Sand Dunes",
-      "location": {
-        "city": "Netanya",
-        "state": "Central Israel"
-      },
-      "description":
-        "A natural reserve with unique sand dunes along the coastline.",
-      "activities": ["Nature walks", "Sandboarding", "Photography"],
-    "id":"59"
+    "name": "Yam Tzuk Beach",
+    "location": {
+      "city": "Netanya",
+      "state": "Central Israel"
+    },
+    "description": "A beach with white cliffs and clear blue water.",
+    "activities": ["Beachcombing", "Swimming", "Picnicking"],
+    "id": "39",
+    "pictures": [
+      "https://tse1.mm.bing.net/th?id=OIP.JTmJyXlT9RuQ_MI2nbHEdgHaE2&pid=Api&P=0&h=220"
+    ],
+    "status": "approved"
   },
   {
-      "name": "Nahal Amal",
-      "location": {
-        "city": "Ma'alot-Tarshiha",
-        "state": "Northern Israel"
-      },
-      "description": "A river with waterfalls and hiking trails.",
-      "activities": ["Hiking", "Nature walks", "Photography"],
-    "id":"60"
+    "name": "Hula Valley Nature Reserve",
+    "location": {
+      "city": "Hula",
+      "state": "Northern Israel"
+    },
+    "description": "A major birdwatching site with diverse avian species and wetland habitats.",
+    "activities": ["Birdwatching", "Nature walks", "Educational programs"],
+    "id": "40",
+    "pictures": [
+      "https://tse1.mm.bing.net/th?id=OIP.Uay8NA_EQctrRoj4L833tQHaEz&pid=Api&P=0&h=220"
+    ],
+    "status": "approved"
   },
   {
-      "name": "Ein Kedem",
-      "location": {
-        "city": "Negev",
-        "state": "Southern Israel"
-      },
-      "description":
-        "A spring in the desert with lush vegetation and hiking trails.",
-      "activities": ["Hiking", "Nature walks", "Photography"],
-    "id":"61"
+    "name": "Nahal Zin",
+    "location": {
+      "city": "Negev",
+      "state": "Southern Israel"
+    },
+    "description": "A canyon with hiking trails and unique geological formations.",
+    "activities": ["Hiking", "Nature walks", "Photography"],
+    "id": "41",
+    "pictures": [
+      "https://tse3.mm.bing.net/th?id=OIP.FNnhBi1jUhyGbZwtH9XzOwHaE7&pid=Api&P=0&h=220"
+    ],
+    "status": "approved"
   },
   {
-      "name": "Hula Nature Reserve",
-      "location": {
-        "city": "Hula",
-        "state": "Northern Israel"
-      },
-      "description": "Wetlands and birdwatching in the Hula Valley.",
-      "activities": ["Birdwatching", "Nature walks", "Educational programs"],
-    "id":"62"
+    "name": "Tel Dan Nature Reserve",
+    "location": {
+      "city": "Tel Dan",
+      "state": "Northern Israel"
+    },
+    "description": "Archaeological and nature reserve with a flowing river and lush landscapes.",
+    "activities": ["Archaeological tours", "Nature walks", "Birdwatching"],
+    "id": "42",
+    "pictures": [
+      "https://tse1.mm.bing.net/th?id=OIP.iIe2ZS62ybRf9o1QXr-0lQHaE7&pid=Api&P=0&h=220"
+    ],
+    "status": "approved"
   },
   {
-      "name": "Ein Shoko",
-      "location": {
-        "city": "Sde Boker",
-        "state": "Southern Israel"
-      },
-      "description": "A spring in the Negev Desert with hiking trails.",
-      "activities": ["Hiking", "Nature walks", "Photography"],
-    "id":"63"
+    "name": "Mount Arbel National Park",
+    "location": {
+      "city": "Tiberias",
+      "state": "Northern Israel"
+    },
+    "description": "A mountain with hiking trails and panoramic views of the Sea of Galilee.",
+    "activities": ["Hiking", "Scenic viewpoints", "Nature walks"],
+    "id": "43",
+    "pictures": [
+      "https://tse1.mm.bing.net/th?id=OIP.C0Ri-2n4k8Yst_WFf4HZkgHaE8&pid=Api&P=0&h=220"
+    ],
+    "status": "approved"
   },
   {
-      "name": "Kisalon",
-      "location": {
-        "city": "Hadera",
-        "state": "Central Israel"
-      },
-      "description": "A river with waterfalls and nature trails.",
-      "activities": ["Hiking", "Nature walks", "Photography"],
-    "id":"64"
+    "name": "Hof Hasharon National Park",
+    "location": {
+      "city": "Herzliya",
+      "state": "Central Israel"
+    },
+    "description": "A coastal park with sandy beaches and dunes.",
+    "activities": ["Beachcombing", "Swimming", "Picnicking"],
+    "id": "44",
+    "pictures": [
+      "https://tse3.mm.bing.net/th?id=OIP.OYaIkGKEK8Opn_rD8TzZBAHaE8&pid=Api&P=0&h=220"
+    ],
+    "status": "approved"
   },
   {
-      "name": "Nahal Kinneret",
-      "location": {
-        "city": "Tiberias",
-        "state": "Northern Israel"
-      },
-      "description": "A river with waterfalls and scenic landscapes.",
-      "activities": ["Hiking", "Nature walks", "Photography"],
-    "id":"65"
+    "name": "Timna Park",
+    "location": {
+      "city": "Eilat",
+      "state": "Southern Israel"
+    },
+    "description": "Known for unique rock formations, ancient copper mines, and desert landscapes.",
+    "activities": ["Hiking", "Archaeological tours", "Scenic viewpoints"],
+    "id": "45",
+    "pictures": [
+      "https://tse2.mm.bing.net/th?id=OIP.nJ3OYPCuU5A0c2r6VASQnwHaE8&pid=Api&P=0&h=220"
+    ],
+    "status": "approved"
   },
   {
-      "name": "Yarkon Springs",
-      "location": {
-        "city": "Tel Aviv",
-        "state": "Central Israel"
-      },
-      "description": "Natural springs along the Yarkon River with walking trails.",
-      "activities": ["Nature walks", "Picnicking", "Photography"],
-    "id":"66"
+    "name": "Mount Carmel National Park",
+    "location": {
+      "city": "Haifa",
+      "state": "Northern Israel"
+    },
+    "description": "Boasts a diverse range of ecosystems, including forests and Mediterranean landscapes.",
+    "activities": ["Hiking", "Nature walks", "Scenic viewpoints"],
+    "id": "47",
+    "pictures": [
+      "https://tse3.mm.bing.net/th?id=OIP.xXFjt-TJa5NnChZN6f6pQAHaE4&pid=Api&P=0&h=220"
+    ],
+    "status": "approved"
   },
   {
-      "name": "Ramat Menashe Biosphere Reserve",
-      "location": {
-        "city": "Zichron Yaakov",
-        "state": "Northern Israel"
-      },
-      "description":
-        "A biosphere reserve with diverse ecosystems and hiking trails.",
-      "activities": ["Hiking", "Nature walks", "Birdwatching"],
-    "id":"67"
+    "name": "Mount Hermon",
+    "location": {
+      "city": "Kiryat Shmona",
+      "state": "Northern Israel"
+    },
+    "description": "The highest mountain in Israel, known for skiing in the winter.",
+    "activities": ["Skiing", "Hiking", "Scenic viewpoints"],
+    "id": "48",
+    "pictures": [
+      "https://tse4.mm.bing.net/th?id=OIP.VZ4Og936VJMhPb-vSD3SuQHaE8&pid=Api&P=0&h=220"
+    ],
+    "status": "approved"
   },
   {
-      "name": "Nahal Zippori",
-      "location": {
-        "city": "Nazareth",
-        "state": "Northern Israel"
-      },
-      "description": "A stream with waterfalls and archaeological sites.",
-      "activities": ["Hiking", "Nature walks", "Archaeological tours"],
-    "id":"68"
+    "name": "Mizpe Ramon",
+    "location": {
+      "city": "Mizpe Ramon",
+      "state": "Southern Israel"
+    },
+    "description": "A crater with unique geological formations and desert landscapes.",
+    "activities": ["Hiking", "Scenic viewpoints", "Stargazing"],
+    "id": "49",
+    "pictures": [
+      "https://tse2.mm.bing.net/th?id=OIP.MnmFGbkGLi4GgDLqkQNASwHaE7&pid=Api&P=0&h=220"
+    ],
+    "status": "approved"
   },
   {
-      "name": "Ein Afek Nature Reserve",
-      "location": {
-        "city": "Nahariya",
-        "state": "Northern Israel"
-      },
-      "description":
-        "A wetland reserve with walking trails and birdwatching opportunities.",
-      "activities": ["Birdwatching", "Nature walks", "Picnicking"],
-    "id":"69"
+    "name": "Nahal Kadesh Barnea",
+    "location": {
+      "city": "Negev",
+      "state": "Southern Israel"
+    },
+    "description": "A canyon with colorful rock formations and hiking trails.",
+    "activities": ["Hiking", "Nature walks", "Photography"],
+    "id": "50",
+    "pictures": [
+      "https://21111333.fs1.hubspotusercontent-na1.net/hubfs/21111333/Imported_Blog_Media/Kadesh-Barnea-%E2%80%94-How-to-Push-Your-Faith-Past-the-Border-of-Fear-Jun-26-2022-03-06-46-07-AM.jpg"
+    ],
+    "status": "approved"
   },
   {
-      "name": "Nahal Liran",
-      "location": {
-        "city": "Kiryat Shmona",
-        "state": "Northern Israel"
-      },
-      "description": "A river with waterfalls and nature trails.",
-      "activities": ["Hiking", "Nature walks", "Photography"],
-    "id":"70"
+    "name": "Nahal Harod",
+    "location": {
+      "city": "Afula",
+      "state": "Northern Israel"
+    },
+    "description": "A stream with waterfalls and a nature reserve.",
+    "activities": ["Hiking", "Nature walks", "Photography"],
+    "id": "51",
+    "pictures": [
+      "https://tse2.mm.bing.net/th?id=OIP.GBN9Ypv5R7BHju1NJisVNwHaEK&pid=Api&P=0&h=220"
+    ],
+    "status": "approved"
   },
   {
-      "name": "Ein Tzukim (Sodom)",
-      "location": {
-        "city": "Dead Sea",
-        "state": "Southern Israel"
-      },
-      "description": "Oasis in the Judean Desert with unique flora and fauna.",
-      "activities": ["Hiking", "Nature walks", "Photography"],
-    "id":"71"
+    "name": "Hamei Yoav",
+    "location": {
+      "city": "Ashdod",
+      "state": "Southern Israel"
+    },
+    "description": "Natural hot springs with therapeutic properties.",
+    "activities": ["Spa and wellness", "Nature walks", "Relaxation"],
+    "id": "52",
+    "pictures": [
+      "https://tse2.mm.bing.net/th?id=OIP.BDRkHfqK0PzMcbIgAlKBRgHaFj&pid=Api&P=0&h=220"
+    ],
+    "status": "approved"
   },
   {
-      "name": "Ammunition Hill National Memorial Site",
-      "location": {
-        "city": "Jerusalem",
-        "state": "Central Israel"
-      },
-      "description": "Historical site with preserved bunkers and war memorials.",
-      "activities": ["Historical tours", "Educational programs"],
-    "id":"72"
+    "name": "Nahal Betzet",
+    "location": {
+      "city": "Kiryat Shmona",
+      "state": "Northern Israel"
+    },
+    "description": "A river with waterfalls and hiking trails.",
+    "activities": ["Hiking", "Nature walks", "Photography"],
+    "id": "53",
+    "pictures": [
+      "https://tse4.mm.bing.net/th?id=OIP.WmIJ-M92h4XVRHPwI7nzBwHaE7&pid=Api&P=0&h=220"
+    ],
+    "status": "approved"
   },
   {
-      "name": "Nahal Mishmar",
-      "location": {
-        "city": "Eilat",
-        "state": "Southern Israel"
-      },
-      "description": "A canyon with narrow passages and unique rock formations.",
-      "activities": ["Hiking", "Nature walks", "Photography"],
-    "id":"73"
+    "name": "Nahal Tzafit",
+    "location": {
+      "city": "Negev",
+      "state": "Southern Israel"
+    },
+    "description": "A stream with scenic landscapes and hiking opportunities.",
+    "activities": ["Hiking", "Nature walks", "Photography"],
+    "id": "54",
+    "pictures": [
+      "https://tse2.mm.bing.net/th?id=OIP.TLYDqAimfml7PmYWbN9pVQHaFj&pid=Api&P=0&h=220"
+    ],
+    "status": "approved"
   },
   {
-      "name": "Nahal Alexander Agricultural Fields",
-      "location": {
-        "city": "Netanya",
-        "state": "Central Israel"
-      },
-      "description": "Agricultural fields with walking trails and scenic views.",
-      "activities": ["Nature walks", "Photography", "Birdwatching"],
-    "id":"74"
+    "name": "Nahal Daliyot",
+    "location": {
+      "city": "Kibbutz Dalia",
+      "state": "Northern Israel"
+    },
+    "description": "A river with unique rock formations and nature trails.",
+    "activities": ["Hiking", "Nature walks", "Photography"],
+    "id": "55",
+    "pictures": [
+      "https://tse3.mm.bing.net/th?id=OIP.29uX5jUw1Jr2rm2Du4c7WgHaHa&pid=Api&P=0&h=220"
+    ],
+    "status": "approved"
   },
   {
-      "name": "HaBaron Gardens",
-      "location": {
-        "city": "Herzliya",
-        "state": "Central Israel"
-      },
-      "description": "Botanical gardens with a variety of plant species.",
-      "activities": ["Nature walks", "Botanical exploration", "Picnicking"],
-    "id":"75"
+    "name": "Gan HaShlosha",
+    "location": {
+      "city": "Beit She'an",
+      "state": "Northern Israel"
+    },
+    "description": "Natural pools and water features in a beautiful setting.",
+    "activities": ["Swimming", "Picnicking", "Relaxation"],
+    "id": "56",
+    "status": "approved",
+    "pictures": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Gan_HaShlosha_23.JPG/330px-Gan_HaShlosha_23.JPG"
+    ]
   },
   {
-      "name": "Nahal Hakibbutzim",
-      "location": {
-        "city": "Kfar Blum",
-        "state": "Northern Israel"
-      },
-      "description": "A river with waterfalls and nature trails.",
-      "activities": ["Hiking", "Nature walks", "Photography"],
-    "id":"76"
+    "name": "Tel Yodfat",
+    "location": {
+      "city": "Yodfat",
+      "state": "Northern Israel"
+    },
+    "description": "Archaeological site with ancient ruins and historical significance.",
+    "activities": ["Archaeological tours", "Historical exploration"],
+    "id": "57",
+    "pictures": [
+      "https://tse3.mm.bing.net/th?id=OIP.oZafpP8eEACbLeC7AzZk8AHaE8&pid=Api&P=0&h=220"
+    ],
+    "status": "approved"
   },
   {
-      "name": "Tel Gezer National Park",
-      "location": {
-        "city": "Gezer",
-        "state": "Central Israel"
-      },
-      "description":
-        "Archaeological site with ancient city ruins and biblical history.",
-      "activities": ["Archaeological tours", "Historical exploration"],
-    "id":"77"
+    "name": "Nahal Ogla",
+    "location": {
+      "city": "Kibbutz Hulda",
+      "state": "Central Israel"
+    },
+    "description": "A river with waterfalls and scenic landscapes.",
+    "activities": ["Hiking", "Nature walks", "Photography"],
+    "id": "58",
+    "status": "approved",
+    "pictures": [
+      "https://tse4.mm.bing.net/th?id=OIP.zDGhZp563Q81-xisV6uOZwHaE8&pid=Api&P=0&h=220",
+      "https://tse4.mm.bing.net/th?id=OIP.PGsRVspBd_4256HhK-2sBwHaE8&pid=Api&P=0&h=220"
+    ]
   },
   {
-      "name": "Nahal Kibbutzim",
-      "location": {
-        "city": "Kfar Blum",
-        "state": "Northern Israel"
-      },
-      "description": "A river with waterfalls and nature trails.",
-      "activities": ["Hiking", "Nature walks", "Photography"],
-    "id":"78"
+    "name": "Kurkar Sand Dunes",
+    "location": {
+      "city": "Netanya",
+      "state": "Central Israel"
+    },
+    "description": "A natural reserve with unique sand dunes along the coastline.",
+    "activities": ["Nature walks", "Sandboarding", "Photography"],
+    "id": "59",
+    "pictures": [
+      "https://tse3.mm.bing.net/th?id=OIP.8vUC0XWwYKHqSAVTq61hJAHaE6&pid=Api&P=0&h=220"
+    ],
+    "status": "approved"
   },
   {
-      "name": "Nahal Ayun Nature Reserve",
-      "location": {
-        "city": "Rosh Pina",
-        "state": "Northern Israel"
-      },
-      "description": "A river with waterfalls and a nature reserve.",
-      "activities": ["Hiking", "Nature walks", "Photography"],
-      "id":"79"
+    "name": "Nahal Amal",
+    "location": {
+      "city": "Ma'alot-Tarshiha",
+      "state": "Northern Israel"
+    },
+    "description": "A river with waterfalls and hiking trails.",
+    "activities": ["Hiking", "Nature walks", "Photography"],
+    "id": "60",
+    "pictures": [
+      "https://tse3.explicit.bing.net/th?id=OIP.CbfolIq1AoA-bsnWjLvQ_AHaHa&pid=Api&P=0&h=220"
+    ],
+    "status": "approved"
   },
   {
-      "name": "Nahal Hilazon",
-      "location": {
-        "city": "Kiryat Tivon",
-        "state": "Northern Israel"
-      },
-      "description": "A river with waterfalls and nature trails.",
-      "activities": ["Hiking", "Nature walks", "Photography"],
-      "id":"80"
+    "name": "Ein Kedem",
+    "location": {
+      "city": "Negev",
+      "state": "Southern Israel"
+    },
+    "description": "A spring in the desert with lush vegetation and hiking trails.",
+    "activities": ["Hiking", "Nature walks", "Photography"],
+    "id": "61",
+    "pictures": [
+      "https://tse4.mm.bing.net/th?id=OIP.VbfmFfrthEvVx6ugiHIf0AAAAA&pid=Api&P=0&h=220"
+    ],
+    "status": "approved"
+  },
+  {
+    "name": "Hula Nature Reserve",
+    "location": {
+      "city": "Hula",
+      "state": "Northern Israel"
+    },
+    "description": "Wetlands and birdwatching in the Hula Valley.",
+    "activities": ["Birdwatching", "Nature walks", "Educational programs"],
+    "id": "62",
+    "pictures": [
+      "https://tse2.mm.bing.net/th?id=OIP.C3GUC8FEtsvtp9A257PDawHaE8&pid=Api&P=0&h=220"
+    ],
+    "status": "approved"
+  },
+  {
+    "name": "Ein Shoko",
+    "location": {
+      "city": "Sde Boker",
+      "state": "Southern Israel"
+    },
+    "description": "A spring in the Negev Desert with hiking trails.",
+    "activities": ["Hiking", "Nature walks", "Photography"],
+    "id": "63",
+    "pictures": [
+      "https://tse2.mm.bing.net/th?id=OIP.YPWWxkXyM5Y3eY-eAj7_VgHaEB&pid=Api&P=0&h=220"
+    ],
+    "status": "approved"
+  },
+  {
+    "name": "Kisalon",
+    "location": {
+      "city": "Hadera",
+      "state": "Central Israel"
+    },
+    "description": "A river with waterfalls and nature trails.",
+    "activities": ["Hiking", "Nature walks", "Photography"],
+    "id": "64",
+    "pictures": [
+      "https://tse1.mm.bing.net/th?id=OIP.GuygaAb3fp5PZyfPtyhsPgHaF-&pid=Api&P=0&h=220"
+    ],
+    "status": "approved"
+  },
+  {
+    "name": "Nahal Kinneret",
+    "location": {
+      "city": "Tiberias",
+      "state": "Northern Israel"
+    },
+    "description": "A river with waterfalls and scenic landscapes.",
+    "activities": ["Hiking", "Nature walks", "Photography"],
+    "id": "65",
+    "pictures": [
+      "https://tse2.mm.bing.net/th?id=OIP.41UYMxeJqgc9Sf2I7MPpRwHaFj&pid=Api&P=0&h=220"
+    ],
+    "status": "approved"
+  },
+  {
+    "name": "Yarkon Springs",
+    "location": {
+      "city": "Tel Aviv",
+      "state": "Central Israel"
+    },
+    "description": "Natural springs along the Yarkon River with walking trails.",
+    "activities": ["Nature walks", "Picnicking", "Photography"],
+    "id": "66",
+    "pictures": [
+      "https://tse3.mm.bing.net/th?id=OIP.m32_I0DR2ive1WH6UDFgxwHaFj&pid=Api&P=0&h=220"
+    ],
+    "status": "approved"
+  },
+  {
+    "name": "Ramat Menashe Biosphere Reserve",
+    "location": {
+      "city": "Zichron Yaakov",
+      "state": "Northern Israel"
+    },
+    "description": "A biosphere reserve with diverse ecosystems and hiking trails.",
+    "activities": ["Hiking", "Nature walks", "Birdwatching"],
+    "id": "67",
+    "pictures": [
+      "https://tse1.mm.bing.net/th?id=OIP.PEN813wFWXAVwJYl9eNckgHaFj&pid=Api&P=0&h=220"
+    ],
+    "status": "approved"
+  },
+  {
+    "name": "Nahal Zippori",
+    "location": {
+      "city": "Nazareth",
+      "state": "Northern Israel"
+    },
+    "description": "A stream with waterfalls and archaeological sites.",
+    "activities": ["Hiking", "Nature walks", "Archaeological tours"],
+    "id": "68",
+    "pictures": [
+      "https://tse2.mm.bing.net/th?id=OIP.nDcpabRlUx8dEfNu_8QsyQHaE7&pid=Api&P=0&h=220"
+    ],
+    "status": "approved"
+  },
+  {
+    "name": "Ein Afek Nature Reserve",
+    "location": {
+      "city": "Nahariya",
+      "state": "Northern Israel"
+    },
+    "description": "A wetland reserve with walking trails and birdwatching opportunities.",
+    "activities": ["Birdwatching", "Nature walks", "Picnicking"],
+    "id": "69",
+    "pictures": [
+      "https://tse3.mm.bing.net/th?id=OIP.MH1dXhpVJYWhr259NLStCgHaFj&pid=Api&P=0&h=220"
+    ],
+    "status": "approved"
+  },
+  {
+    "name": "Nahal Liran",
+    "location": {
+      "city": "Kiryat Shmona",
+      "state": "Northern Israel"
+    },
+    "description": "A river with waterfalls and nature trails.",
+    "activities": ["Hiking", "Nature walks", "Photography"],
+    "id": "70"
+  },
+  {
+    "name": "Ein Tzukim (Sodom)",
+    "location": {
+      "city": "Dead Sea",
+      "state": "Southern Israel"
+    },
+    "description": "Oasis in the Judean Desert with unique flora and fauna.",
+    "activities": ["Hiking", "Nature walks", "Photography"],
+    "id": "71",
+    "pictures": [
+      "https://tse4.mm.bing.net/th?id=OIP.Z7ZYrbmtH119UpIu7nlI8wHaFL&pid=Api&P=0&h=220"
+    ],
+    "status": "approved"
+  },
+  {
+    "name": "Ammunition Hill National Memorial Site",
+    "location": {
+      "city": "Jerusalem",
+      "state": "Central Israel"
+    },
+    "description": "Historical site with preserved bunkers and war memorials.",
+    "activities": ["Historical tours", "Educational programs"],
+    "id": "72",
+    "pictures": [
+      "https://tse1.mm.bing.net/th?id=OIP.ZdH4xem9oQabRlSlXU3KLQHaFj&pid=Api&P=0&h=220"
+    ],
+    "status": "approved"
+  },
+  {
+    "name": "Nahal Mishmar",
+    "location": {
+      "city": "Eilat",
+      "state": "Southern Israel"
+    },
+    "description": "A canyon with narrow passages and unique rock formations.",
+    "activities": ["Hiking", "Nature walks", "Photography"],
+    "id": "73",
+    "pictures": [
+      "https://live.staticflickr.com/1021/1004574112_69c73a8ab4.jpg"
+    ],
+    "status": "approved"
+  },
+  {
+    "name": "HaBaron Gardens",
+    "location": {
+      "city": "Herzliya",
+      "state": "Central Israel"
+    },
+    "description": "Botanical gardens with a variety of plant species.",
+    "activities": ["Nature walks", "Botanical exploration", "Picnicking"],
+    "id": "75",
+    "pictures": [
+      "https://tse3.mm.bing.net/th?id=OIP.ynBqeN7bUcFUcCm5m2uZ8AAAAA&pid=Api&P=0&h=220"
+    ],
+    "status": "approved"
+  },
+  {
+    "name": "Nahal Hakibbutzim",
+    "location": {
+      "city": "Kfar Blum",
+      "state": "Northern Israel"
+    },
+    "description": "A river with waterfalls and nature trails.",
+    "activities": ["Hiking", "Nature walks", "Photography"],
+    "id": "76",
+    "pictures": [
+      "https://tse3.mm.bing.net/th?id=OIP.IElVPBbUFRT83bPxeJL9UAHaE8&pid=Api&P=0&h=220"
+    ],
+    "status": "approved"
+  },
+  {
+    "name": "Tel Gezer National Park",
+    "location": {
+      "city": "Gezer",
+      "state": "Central Israel"
+    },
+    "description": "Archaeological site with ancient city ruins and biblical history.",
+    "activities": ["Archaeological tours", "Historical exploration"],
+    "id": "77",
+    "pictures": [
+      "https://tse2.mm.bing.net/th?id=OIP.mPrhxKh9DJaUdU_Bs5LzdQHaEK&pid=Api&P=0&h=220"
+    ],
+    "status": "approved"
+  },
+  {
+    "name": "Nahal Kibbutzim",
+    "location": {
+      "city": "Kfar Blum",
+      "state": "Northern Israel"
+    },
+    "description": "A river with waterfalls and nature trails.",
+    "activities": ["Hiking", "Nature walks", "Photography"],
+    "id": "78",
+    "pictures": [
+      "https://tse3.mm.bing.net/th?id=OIP.cFsooVPZBcAzLgle1qrrvQHaFj&pid=Api&P=0&h=220"
+    ],
+    "status": "approved"
+  },
+  {
+    "name": "Nahal Ayun Nature Reserve",
+    "location": {
+      "city": "Rosh Pina",
+      "state": "Northern Israel"
+    },
+    "description": "A river with waterfalls and a nature reserve.",
+    "activities": ["Hiking", "Nature walks", "Photography"],
+    "id": "79",
+    "pictures": [
+      "https://tse1.mm.bing.net/th?id=OIP.SYVYmhDbzA1R3rIzAC-CpwHaFb&pid=Api&P=0&h=220"
+    ],
+    "status": "approved"
+  },
+  {
+    "name": "Nahal Hilazon",
+    "location": {
+      "city": "Kiryat Tivon",
+      "state": "Northern Israel"
+    },
+    "description": "A river with waterfalls and nature trails.",
+    "activities": ["Hiking", "Nature walks", "Photography"],
+    "id": "80",
+    "pictures": [
+      "https://tse2.mm.bing.net/th?id=OIP.qfYkfMAcNHLVJ2lurOae1AHaCQ&pid=Api&P=0&h=220"
+    ],
+    "status": "approved"
+  },
+  {
+    "CreatedAt": 1703017456,
+    "Name": "Name 81",
+    "Picture": [],
+    "Description": "Description 81",
+    "Category": "Category 81",
+    "Location": {},
+    "City": "City 81",
+    "id": "81",
+    "name": "Park Nahal in Hadera",
+    "pictures": [
+      "https://tse2.mm.bing.net/th?id=OIP.LGD_OWwGBUBPCXDLZugIDwHaDn&pid=Api&P=0&h=220"
+    ],
+    "description": "",
+    "location": {
+      "city": "Hadera",
+      "state": "Northern Israel"
+    },
+    "activities": ["Hiking"],
+    "createdAt": 19,
+    "status": "approved"
   }
-  ]
-  
-  
+]

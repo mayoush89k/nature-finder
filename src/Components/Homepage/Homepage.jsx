@@ -86,11 +86,12 @@ export default function Homepage() {
                         key={index}
                         className="park-card"
                         onClick={() =>
-                          navigate(`${park.name}`, { state: { park } })
+                          navigate(`/Park/${park.name}`, { state: { park } })
                         }
                       >
                         <img src={park.pictures[0]} alt={park.name} />
                         <h2>{park.name}</h2>
+                        <div id="location"><p>{park.location.city}</p><p>{park.location.state}</p></div>
                       </div>
                     );
                   })
@@ -101,12 +102,13 @@ export default function Homepage() {
                   return (
                     <div
                       onClick={() =>
-                        navigate(`${park.name}`, { state: { park } })
+                        navigate(`/Park/${park.name}`, { state: { park } })
                       }
                     >
                       <div key={index} className="park-card">
                         <img src={park.pictures[0]} alt={park.name} />
                         <h2>{park.name}</h2>
+                        <div id="location"><p>{park.location.city}</p><p>{park.location.state}</p></div>
                       </div>
                     </div>
                   );

@@ -107,20 +107,20 @@ body {
   border-bottom: 5px solid var(--blue-color1);
 }
 .pages-light .Crazy,
-#light-header .Crazy{
+#light-header .Crazy {
   animation: crazyLight infinite 10s linear;
 }
 .pages-dark .Crazy,
-#dark-header .Crazy{
+#dark-header .Crazy {
   animation: crazyDark infinite 10s linear;
 }
 
 @keyframes crazyLight {
   0% {
-    background-color:  var(--green-color4);
-    color:var(--dark-color3);
+    background-color: var(--green-color4);
+    color: var(--dark-color3);
   }
-  50%{
+  50% {
     background-color: var(--green-color5);
     color: var(--green-color1);
   }
@@ -130,7 +130,7 @@ body {
     background-color: var(--green-color5);
     color: var(--green-color1);
   }
-  50%{
+  50% {
     background-color: var(--green-color1);
     color: var(--green-color5);
   }
@@ -281,17 +281,41 @@ body {
 }
 
 /* single park styles*/
-.pages-light .activity ,
+.pages-light .activity,
 .pages-light #activities-container div {
   background-color: var(--green-color2);
   color: var(--dark-color1);
   border-color: var(--green-color4);
 }
-.pages-dark .activity ,
+.pages-dark .activity,
 .pages-dark #activities-container div {
   background-color: var(--green-color4);
   color: var(--dark-color1);
   border: 1px solid var(--green-color1);
+}
+
+/* history */
+.pages-light .history-card {
+  background-color: var(--green-color4);
+  color: var(--dark-color1);
+  border-color: var(--dark-color1);
+}
+.pages-dark .history-card {
+  background-color: var(--dark-color1);
+  color: var(--green-color4);
+  border-color: var(--green-color4);
+}
+
+
+/* Error */
+.pages-dark #error-container{
+  color: var(--green-color4);
+  border-color: var(--green-color4);
+}
+.pages-light #error-container{
+  color: var(--green-color2);
+  border-color: var(--green-color2);
+  
 }
 
 @media (max-width: 800px) and (min-width: 501px) {

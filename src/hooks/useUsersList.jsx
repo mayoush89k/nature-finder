@@ -12,7 +12,6 @@ const useUsersList = () => {
       setLoading(true);
       try {
         const response = await axios.get(url);
-
         setUsersList(response.data);
         setLoading(false);
       } catch (error) {
@@ -36,7 +35,7 @@ const useUsersList = () => {
 
   const updateUserInUsersList = async (user, newPark) => {
     const response = await axios.put(url + "/" + user.id, {
-      parksAdded: newPark,
+      parksAdded: [...user.parksAdded, newPark],
     });
     console.log("Added ", newPark);
   };

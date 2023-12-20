@@ -44,7 +44,13 @@
     font-size: 20px;
     border-radius: 20px;
 }
-
+#Homepage #location{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
 @media (max-width: 800px)  {
     #Homepage{
         padding-top: 50px;

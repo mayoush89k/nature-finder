@@ -7,14 +7,15 @@ import {
 } from "react-icons/fa";
 import "./Header.css";
 import { useTheme } from "../../context/ThemeContext";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useUser } from "../../context/UserContext";
 
 export default function Header() {
   const { theme, changeTheme } = useTheme();
   const { user, getUser, logOutUser } = useUser();
   const [clicked, setClicked] = useState(false);
-  
+  let navigate = useNavigate()
+
   const menuList = [
     { name: "Homepage", path: "/" },
     { name: "Add More", path: "/AddPark" },
@@ -74,7 +75,23 @@ export default function Header() {
                 </Link>
               </button>
             </div>
-          ) : (
+          ) : (<div>
+            {user?.name == 'admin' && <button onClick={() =>
+                setTimeout(() => {
+                  setClicked(false);
+                  navigate('/Nature')
+                }, 500)
+              }>
+              Admin
+            </button>
+            }<button onClick={() =>
+                setTimeout(() => {
+                  setClicked(false);
+                  navigate('/History')
+                }, 500)
+              }>
+              History
+            </button>
             <button
               onClick={() =>
                 setTimeout(() => {
@@ -85,6 +102,7 @@ export default function Header() {
             >
               Logout
             </button>
+            </div>
           )}
         </div>
       )}

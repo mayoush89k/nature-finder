@@ -5,11 +5,13 @@ import { useUser } from "../../context/UserContext";
 import useUsersList from "../../hooks/useUsersList";
 import { BarLoader } from "react-spinners";
 import useParks from "../../hooks/useParks";
+import { useNavigate } from "react-router-dom";
 
 const AddPark = () => {
   const { theme } = useTheme();
   const [newPark, setNewPark] = useState({});
   const { user, updateUser } = useUser();
+  let navigate = useNavigate();
   const {
     parksList,
     loading: loadingPark,
@@ -58,15 +60,57 @@ const AddPark = () => {
       user.parksAdded
         ? updateUser({
             ...user,
-            parksAdded: [...user.parksAdded, newPark],
+            parksAdded: [
+              ...user.parksAdded,
+              {
+                name: formData.name,
+                pictures: formData.pictures,
+                description: formData.description,
+                location: { city: formData.city, state: formData.state },
+                activities: formData.activities,
+                addedBy: user.username,
+                createdAt: new Date().getDate(),
+                status: "pending",
+              },
+            ],
           })
         : updateUser({
             ...user,
-            parksAdded: [newPark],
+            parksAdded: [
+              {
+                name: formData.name,
+                pictures: formData.pictures,
+                description: formData.description,
+                location: { city: formData.city, state: formData.state },
+                activities: formData.activities,
+                addedBy: user.username,
+                createdAt: new Date().getDate(),
+                status: "pending",
+              },
+            ],
           });
-      updateUserInUsersList(user, newPark);
-      console.log(newPark)
-      addNewPark(newPark);
+      console.log(user);
+      updateUserInUsersList(user, {
+        name: formData.name,
+        pictures: formData.pictures,
+        description: formData.description,
+        location: { city: formData.city, state: formData.state },
+        activities: formData.activities,
+        addedBy: user.username,
+        createdAt: new Date().getDate(),
+        status: "pending",
+      });
+      addNewPark({
+        name: formData.name,
+        pictures: formData.pictures,
+        description: formData.description,
+        location: { city: formData.city, state: formData.state },
+        activities: formData.activities,
+        addedBy: user.username,
+        createdAt: new Date().getDate(),
+        status: "pending",
+      });
+      navigate("/History");
     }
 
     errorPark || errorUser
@@ -76,7 +120,7 @@ const AddPark = () => {
 
   return (
     <div className={theme ? "pages-light" : "pages-dark"} id="AddPark">
-      <h2>Registration Page</h2>
+      <h2>Add New Nature Place</h2>
       <div>
         {errorPark || errorUser ? (
           <div>
@@ -179,7 +223,7 @@ const AddPark = () => {
                 <br />
 
                 <button type="submit" onClick={handleSubmit}>
-                  Register
+                  Add Place
                 </button>
               </form>
             )}

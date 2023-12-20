@@ -14,6 +14,8 @@ import Nature from "./Components/Nature/Nature";
 import AddPark from "./Components/AddPark/AddPark";
 import SinglePark from "./Components/SinglePark/SinglePark";
 import CrazyPick from "./Components/CrazyPick/CrazyPick";
+import History from "./Components/History/History";
+import Error from "./Components/Error/Error";
 
 function App() {
   return (
@@ -32,7 +34,7 @@ function App() {
                   right={
                     <Routes>
                       <Route path="/" element={<Homepage />} />
-                      <Route path="/:name" element={<SinglePark />} />
+                      <Route path="/Park/:name" element={<SinglePark />} />
                       <Route path="/AboutUs" element={<AboutUs />} />
                       <Route path="/ContactUs" element={<ContactUs />} />
                       <Route path="/Login" element={<Login />} />
@@ -40,6 +42,8 @@ function App() {
                       <Route path="/Nature" element={<Nature />} />
                       <Route path="/AddPark" element={<AddPark />} />
                       <Route path="/CrazyPick" element={<CrazyPick />} />
+                      <Route path="/History" element={<History />} />
+                      <Route path="/*" element={<Error />} />
                     </Routes>
                   }
                 ></SplitScreens>
