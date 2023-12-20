@@ -106,7 +106,35 @@ body {
 #dark-header .link:hover {
   border-bottom: 5px solid var(--blue-color1);
 }
+.pages-light .Crazy,
+#light-header .Crazy{
+  animation: crazyLight infinite 10s linear;
+}
+.pages-dark .Crazy,
+#dark-header .Crazy{
+  animation: crazyDark infinite 10s linear;
+}
 
+@keyframes crazyLight {
+  0% {
+    background-color:  var(--green-color4);
+    color:var(--dark-color3);
+  }
+  50%{
+    background-color: var(--green-color5);
+    color: var(--green-color1);
+  }
+}
+@keyframes crazyDark {
+  0% {
+    background-color: var(--green-color5);
+    color: var(--green-color1);
+  }
+  50%{
+    background-color: var(--green-color1);
+    color: var(--green-color5);
+  }
+}
 /* Aside Mode styles */
 .sidebar-light {
   background-color: var(--light-color3);
@@ -146,7 +174,6 @@ body {
   min-width: 88vw;
   margin: auto;
   padding-top: 10vh;
-  /* padding-left: 5vw; */
   transition: 0.3s;
   display: flex;
   flex-direction: column;
@@ -229,12 +256,14 @@ body {
   transition: 0.5s;
   background-color: var(--light-color8);
 }
-
+.pages-light select,
 .pages-light button {
   background-color: var(--green-color1);
   color: var(--green-color4);
   border: 2px solid var(--green-color4);
+  font-weight: bold;
 }
+.pages-dark select,
 .pages-dark button {
   background-color: var(--green-color4);
   color: var(--dark-color1);
@@ -252,11 +281,13 @@ body {
 }
 
 /* single park styles*/
+.pages-light .activity ,
 .pages-light #activities-container div {
   background-color: var(--green-color2);
   color: var(--dark-color1);
   border-color: var(--green-color4);
 }
+.pages-dark .activity ,
 .pages-dark #activities-container div {
   background-color: var(--green-color4);
   color: var(--dark-color1);

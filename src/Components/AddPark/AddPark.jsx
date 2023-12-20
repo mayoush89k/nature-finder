@@ -53,16 +53,22 @@ const AddPark = () => {
         activities: formData.activities,
         addedBy: user.username,
         createdAt: new Date().getDate(),
-        status: "pending approval",
+        status: "pending",
       });
-      updateUser({
-        ...user,
-        parksAdded: [...user.parksAdded, newPark],
-      });
+      user.parksAdded
+        ? updateUser({
+            ...user,
+            parksAdded: [...user.parksAdded, newPark],
+          })
+        : updateUser({
+            ...user,
+            parksAdded: [newPark],
+          });
       updateUserInUsersList(user, newPark);
+      console.log(newPark)
       addNewPark(newPark);
     }
-    
+
     errorPark || errorUser
       ? console.log("Form validation failed.")
       : console.log("Form data submitted:", formData);
@@ -167,7 +173,7 @@ const AddPark = () => {
                       });
                     }}
                   >
-                    add activity
+                    add Picture
                   </button>
                 </label>
                 <br />

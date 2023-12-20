@@ -54,13 +54,39 @@ const useParks = () => {
     return filterParksList;
   };
   const addNewPark = async (newPark) => {
-    try {
-      const response = await axios.post(url, newPark);
-      console.log("post new park ", response.data);
-      fetchData();
-    } catch (error) {
-      setError(error);
+    if (newPark != {}) {
+      try {
+        console.log(newPark);
+        const response = await axios.post(url, newPark);
+        console.log("post new park ", response.data);
+        fetchData();
+      } catch (error) {
+        setError(error);
+      }
     }
+  };
+  const sortByName = () => {
+    filterParksList
+      ? setFilterParksList(
+          filterParksList.sort((a, b) => (a.name > b.name ? 1 : -1))
+        )
+      : setFilterParksList(
+          parksList.sort((a, b) => (a.name > b.name ? 1 : -1))
+        );
+  };
+  const sortByCity = () => {
+    setFilterParksList(
+      filterParksList
+        ? filterParksList.sort((a, b) =>
+            a.location.city > b.location.city ? 1 : -1
+          )
+        : parksList.sort((a, b) => (a.location.city > b.location.city ? 1 : -1))
+    );
+  };
+  const handleSearch = (input) => {
+    setFilterParksList(
+      parksList.filter((park) => park.name.toLowerCase().includes(input))
+    );
   };
   const updateParkData = async (park, changedKey, changedValue) => {
     const newData = park[changedKey]
@@ -82,6 +108,22 @@ const useParks = () => {
       setLoading(false);
     }
   };
+  const getRandomPark = async () => {
+    setLoading(true)
+    const random = Math.floor(Math.random() * parksList.length) + 1;
+    console.log(random);
+    try {
+      const response = await axios.get(url + "?id=" + random);
+      console.log(response.data[0]);
+      setLoading(false)
+      return response.data[0];
+    } catch (error) {
+      console.error(error);
+      setError(error)
+      setLoading(false)
+    }
+  };
+
   return {
     parksList,
     filterParksList,
@@ -89,7 +131,11 @@ const useParks = () => {
     filterParksCity,
     addNewPark,
     updateParkData,
+    sortByName,
+    sortByCity,
+    handleSearch,
     getPark,
+    getRandomPark,
     loading,
     error,
   };

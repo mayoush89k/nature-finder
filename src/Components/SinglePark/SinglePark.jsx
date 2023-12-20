@@ -4,6 +4,7 @@ import { useLocation, useParams } from "react-router-dom";
 import useParks from "../../hooks/useParks";
 import { BarLoader } from "react-spinners";
 import "./SinglePark.css";
+import { useUser } from "../../context/UserContext";
 
 export default function SinglePark() {
   const { theme } = useTheme();
@@ -12,6 +13,7 @@ export default function SinglePark() {
   const { getPark, loading, error, updateParkData } = useParks();
   const [inputValue, setInputValue] = useState("");
   const [park, setPark] = useState(state.park);
+  const {user , updateUser} = useUser() 
 
   useEffect(() => {
     async function fetch() {
@@ -22,20 +24,19 @@ export default function SinglePark() {
   }, []);
 
   return (
-    <div id="SinglePark" className={theme ? "pages-light" : "pages-dark"}>
-      SinglePark
+    <main id="SinglePark" className={theme ? "pages-light" : "pages-dark"}>
       {error ? (
         <div>{error?.message}</div>
       ) : loading ? (
         <BarLoader />
       ) : (
         <div id="main-container">
-          <h1>{name}</h1>
+          <h1>  {name}</h1>
+          <h3>{park?.location.city} - {park?.location.state}</h3>
           <div id="pictures-container">
             {park?.pictures?.map((picture, index) => (
               <img src={picture} alt={`${park?.name}-${index}`} key={index} />
             ))}
-            {/* {console.log(park?.pictures[0])} */}
           </div>
           <input
             type="text"
@@ -65,6 +66,6 @@ export default function SinglePark() {
           </div>
         </div>
       )}
-    </div>
+    </main>
   );
 }

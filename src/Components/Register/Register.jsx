@@ -157,7 +157,7 @@ export default function Register() {
     );
   };
   return (
-    <div className={theme ? "pages-light" : "pages-dark"} id="Register">
+    <main className={theme ? "pages-light" : "pages-dark"} id="Register">
       <h2>Registration Page</h2>
       <form onSubmit={handleSubmit}>
         {/* create the inputs as useState list of objects, so we can re-render on page by each value of input  */}
@@ -189,6 +189,6 @@ export default function Register() {
           }, 2000)}
         </div>
       )}
-    </div>
+    </main>
   );
 }

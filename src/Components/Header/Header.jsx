@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import {
   FaRegUserCircle,
   FaSortDown,
@@ -14,6 +14,7 @@ export default function Header() {
   const { theme, changeTheme } = useTheme();
   const { user, getUser, logOutUser } = useUser();
   const [clicked, setClicked] = useState(false);
+  
   const menuList = [
     { name: "Homepage", path: "/" },
     { name: "Add More", path: "/AddPark" },
@@ -32,6 +33,9 @@ export default function Header() {
           </Link>
         ))}
       </menu>
+      <Link className='Crazy' to="/CrazyPick">
+        Crazy Pick
+      </Link>
       {/* setting side */}
       <section name="setting" id="setting">
         <div onClick={() => setClicked((prev) => !prev)}>
@@ -54,7 +58,9 @@ export default function Header() {
                   }, 500)
                 }
               >
-                <Link to="/Login" className="link">Login</Link>
+                <Link to="/Login" className="link">
+                  Login
+                </Link>
               </button>{" "}
               <button
                 onClick={() =>
@@ -63,7 +69,9 @@ export default function Header() {
                   }, 500)
                 }
               >
-                <Link to="/Register" className="link">Register</Link>
+                <Link to="/Register" className="link">
+                  Register
+                </Link>
               </button>
             </div>
           ) : (

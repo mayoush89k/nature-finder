@@ -28,8 +28,8 @@
 }
 .Header #setting-container {
   position: absolute;
-  top: 3.5vh;
-  right: 2vw;
+  top: 4vh;
+  right: 10vw;
   width: 150px;
   padding: 10px;
   animation: setting 0.3s ease-in;
@@ -67,6 +67,18 @@
 }
 .menu-item:hover {
   transition: 0.2s;
+}
+.Crazy{
+  transition: 2s;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 20px;
+}
+.Crazy:hover{
+  font-weight: bold;
+  font-size: 18px;
+  transition: 2s;
 }
 @media (max-width: 500px) {
   .Header {

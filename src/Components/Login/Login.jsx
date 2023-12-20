@@ -45,7 +45,7 @@ export default function Login() {
   };
 
   return (
-    <div className={theme ? "pages-light" : "pages-dark"} id="LoginPage">
+    <main className={theme ? "pages-light" : "pages-dark"} id="LoginPage">
       <form
         onSubmit={(e) => {
           e.preventDefault();
@@ -86,6 +86,6 @@ export default function Login() {
           }, 2000)}
         </div>
       )}
-    </div>
+    </main>
   );
 }

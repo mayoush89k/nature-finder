@@ -59,7 +59,7 @@ export default function Nature() {
     }
   };
   return (
-    <div id="Nature" className="pages-light">
+    <main id="Nature" className="pages-light">
       <div id="parks-list">
         {parks?.map(
           (park, index) =>
@@ -95,6 +95,6 @@ export default function Nature() {
             )
         )}
       </div>
-    </div>
+    </main>
   );
 }

@@ -1,0 +1,22 @@
+#CrazyPick{
+    margin: auto;
+    max-width: 90%;
+    text-align: center;
+}
+
+#CrazyPick .Crazy{
+    margin: auto;
+    width: 100%;
+}
+#CrazyPick h1,
+#CrazyPick img{
+    margin: 10px auto;
+    max-width: 500px;
+    min-width: 300px;
+}
+
+#CrazyPick .activity{
+    padding: 10px;
+    margin: 10px;
+    border: 2px outset 
+}

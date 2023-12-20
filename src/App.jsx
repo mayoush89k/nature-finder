@@ -13,6 +13,7 @@ import Register from "./Components/Register/Register";
 import Nature from "./Components/Nature/Nature";
 import AddPark from "./Components/AddPark/AddPark";
 import SinglePark from "./Components/SinglePark/SinglePark";
+import CrazyPick from "./Components/CrazyPick/CrazyPick";
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
                       <Route path="/Register" element={<Register />} />
                       <Route path="/Nature" element={<Nature />} />
                       <Route path="/AddPark" element={<AddPark />} />
+                      <Route path="/CrazyPick" element={<CrazyPick />} />
                     </Routes>
                   }
                 ></SplitScreens>

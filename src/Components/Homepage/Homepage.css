@@ -6,11 +6,21 @@
     margin: 0 auto;
     text-align: center;
 }
+#Homepage select{
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 20px;
+}
+#Homepage input {
+    padding: 10px;
+    font-size: 18px;
+    margin: 10px;
+  }
 #Homepage #cities-list,
 #Homepage #parks-list{
     margin: 50px auto;
     display: flex;
-    gap: 50px;
+    gap: 30px;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;

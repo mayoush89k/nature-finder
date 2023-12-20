@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useTheme } from "../../context/ThemeContext";
 import useParks from "../../hooks/useParks";
 import { RotateLoader } from "react-spinners";
@@ -8,24 +8,35 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 export default function Homepage() {
   const { theme } = useTheme();
   const { state } = useLocation();
+  const [searchValue , setSearchValue] = useState('')
   let navigate = useNavigate();
   const {
     parksList,
     filterParks,
     filterParksCity,
     filterParksList,
+    sortByName,
+    sortByCity,
+    handleSearch,
     loading,
     error,
   } = useParks();
 
   useEffect(() => {
-    console.log(state)
     state?.state && filterParks(state.state);
+    setSearchValue('')
   }, [state]);
 
+  const handleSelect = (e) => {
+    if (e.target.value == "name") {
+      sortByName();
+    }
+    if (e.target.value == "city") {
+      sortByCity();
+    }
+  };
   return (
-    <div id="Homepage" className={theme ? "pages-light" : "pages-dark"}>
-            <h1>Parks List</h1>
+    <main id="Homepage" className={theme ? "pages-light" : "pages-dark"}>
       <div id="cities-list">
         {state?.state?.map((dist, index) => (
           <button
@@ -36,6 +47,17 @@ export default function Homepage() {
           </button>
         ))}
       </div>
+      {!state && (<div>
+        <input type="search"  value={searchValue} onChange={(e) => {setSearchValue(e.target.value);handleSearch(searchValue)}}/>
+        <select onChange={(e) => handleSelect(e)}>
+          <option selected disabled>
+            SortBy
+          </option>
+          <option value="name">Name</option>
+          <option value="city">City</option>
+        </select>
+      </div>
+      )}
       {error ? (
         <h1>{error.message}</h1>
       ) : (
@@ -48,7 +70,7 @@ export default function Homepage() {
             <div id="parks-list">
               {/* when clicking on the list of aside component */}
               {/* if clicked ? */}
-              {state?.state ? (
+              {state?.state || filterParksList.length > 0 ? (
                 filterParksList?.length == 0 ? ( //empty list of parks
                   <div>
                     <h3>
@@ -94,7 +116,6 @@ export default function Homepage() {
           )}
         </div>
       )}
-
-    </div>
+    </main>
   );
 }
