@@ -1,5 +1,4 @@
 #Homepage{
-    padding-top: 80px;
     border-radius: 5px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     width: 300px;
@@ -37,6 +36,7 @@
 #Homepage .park-card img{
     width: 100%;
     max-height: 300px;
+    border-radius: 20px;
 }
 #Homepage button{
     cursor: pointer;

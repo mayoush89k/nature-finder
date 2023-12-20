@@ -43,8 +43,8 @@ body {
   --green-color1: #d4e9d9;
   --green-color2: #bdddc2;
   --green-color3: #93cc9d;
-  --green-color4: #22a33c;
-  --green-color5: #167f2c;
+  --green-color4: #6a994e;
+  --green-color5: #44591b;
   --green-color6: #44591b;
 }
 
@@ -59,12 +59,16 @@ body {
   font-family: "Font Awesome 5 Free";
 }
 
-#dark-header #mode,
 #light-header #setting-container button,
 #light-header {
   background-color: var(--green-color1);
 }
-#light-header #mode,
+#dark-header #mode{
+  color: var(--light-color2);
+}
+#light-header #mode{
+  color:var(--green-color5)
+}
 #dark-header #setting-container button,
 #dark-header {
   background-color: var(--green-color5);
@@ -170,14 +174,15 @@ body {
 /* Pages Mode styles */
 .pages-light,
 .pages-dark {
-  min-height: 99vh;
-  min-width: 88vw;
+  height: 99vh;
+    min-width: 88vw;
   margin: auto;
-  padding-top: 10vh;
+  overflow: scroll;
+  scrollbar-width: thin;
   transition: 0.3s;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -247,14 +252,15 @@ body {
   background-color: var(--green-color5);
 }
 .pages-dark #parks-list .park-card:hover {
-  transition: 0.5s;
   box-shadow: none;
-  background-color: var(--dark-color8);
+  background-color: var(--green-color1);
+  color: var(--green-color4);
+  transition: 0.5s;
 }
 .pages-light #parks-list .park-card:hover {
   box-shadow: none;
   transition: 0.5s;
-  background-color: var(--light-color8);
+  background-color: var(--green-color4);
 }
 .pages-light select,
 .pages-light button {
@@ -269,11 +275,13 @@ body {
   color: var(--dark-color1);
   border: 1px solid var(--green-color1);
 }
+.pages-light select:hover ,
 .pages-light button:hover {
   background-color: var(--green-color4);
   color: var(--green-color2);
   transition: 0.5s;
 }
+.pages-dark select:hover,
 .pages-dark button:hover {
   background-color: var(--green-color1);
   color: var(--green-color4);

@@ -90,7 +90,7 @@ export default function Homepage() {
                         }
                       >
                         <img src={park.pictures[0]} alt={park.name} />
-                        <h2>{park.name}</h2>
+                        <h3>{park.name}</h3>
                         <div id="location"><p>{park.location.city}</p><p>{park.location.state}</p></div>
                       </div>
                     );
@@ -107,7 +107,7 @@ export default function Homepage() {
                     >
                       <div key={index} className="park-card">
                         <img src={park.pictures[0]} alt={park.name} />
-                        <h2>{park.name}</h2>
+                        <h3>{park.name}</h3>
                         <div id="location"><p>{park.location.city}</p><p>{park.location.state}</p></div>
                       </div>
                     </div>
