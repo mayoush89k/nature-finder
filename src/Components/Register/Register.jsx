@@ -117,7 +117,7 @@ export default function Register() {
     e.preventDefault();
 
     // Validate the form
-    if (validateForm()) {
+    if (validateForm() && isValid) {
       const newUser = {
         name: formData.name,
         username: formData.username,
@@ -178,7 +178,7 @@ export default function Register() {
         <button type="submit">Register</button>
       </form>
       {/* spinner timeout for Registration time */}
-      {user?.username && (
+      {user?.username && isValid && (
         <div className="spinner">
           Welcome {user.Name} to Nature Finder
           <div id="spinner-loader">
