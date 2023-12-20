@@ -1,0 +1,70 @@
+#contactUs {
+  padding-top: 1vw;
+  top: -10vw;
+  min-height: 70vh;
+}
+#main-contactUs {
+  max-width: 40%;
+  margin: auto;
+  padding: 10px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#main-contactUs textarea,
+#main-contactUs input {
+  padding: 10px;
+  width: 400px;
+  margin: 20px;
+  background-color: transparent;
+  border: transparent dotted 2px;
+}
+#main-contactUs #submit {
+  font-size: 2em;
+  text-shadow: 1px 1px 1px black;
+  padding: 10px;
+  width: 100px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+#ContactUs .spinner {
+  width: 400px;
+  height: 300px;
+  position: absolute;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+#spinner-loader{
+    margin: 50px;
+}
+
+@media (max-width: 1000px) {
+  #main-contactUs textarea,
+  #main-contactUs input {
+    width: 300px;
+  }
+  #main-contactUs {
+    max-width: 70%;
+  }
+}
+@media (max-width: 600px) {
+  #main-contactUs textarea,
+  #main-contactUs input {
+    width: 200px;
+  }
+  #main-contactUs {
+    max-width: 80%;
+  }
+}

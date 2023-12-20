@@ -226,15 +226,15 @@ body {
   border-color: var(--green-color5);
 }
 .pages-light .spinner {
-  background-color: var(--blue-color2);
-  color: var(--blue-color6);
-  border: 1px solid var(--blue-color6);
+  background-color: var(--light-color2);
+  color: var(--green-color5);
+  border: 1px solid var(--green-color5);
 }
 
 .pages-dark .spinner {
-  background-color: var(--blue-color6);
-  color: var(--blue-color4);
-  border: 1px solid var(--blue-color4);
+  background-color: var(--dark-color6);
+  color: var(--green-color4);
+  border: 1px solid var(--green-color4);
 }
 
 /* homepage */
@@ -306,16 +306,55 @@ body {
   border-color: var(--green-color4);
 }
 
-
 /* Error */
-.pages-dark #error-container{
+.pages-dark #error-container {
   color: var(--green-color4);
   border-color: var(--green-color4);
 }
-.pages-light #error-container{
+.pages-light #error-container {
   color: var(--green-color2);
   border-color: var(--green-color2);
-  
+}
+
+/* about us */
+.pages-dark #span,
+.pages-light #span {
+  color: var(--green-color4);
+}
+
+/* contact us */
+.pages-dark #main-contactUs {
+  background-color: var(--green-color5);
+  box-shadow: 10px 10px 10px var(--dark-color8);
+}
+.pages-light #main-contactUs {
+  background-color: var(--green-color2);
+  box-shadow: 10px 10px 10px var(--light-color8);
+  color: var(--dark-color5);
+}
+.pages-dark #main-contactUs textarea,
+.pages-dark #main-contactUs input {
+  background-color: var(--dark-color4);
+}
+.pages-light #main-contactUs textarea,
+.pages-light #main-contactUs input {
+  background-color: var(--light-color4);
+}
+.pages-dark #main-contactUs textarea:focus,
+.pages-dark #main-contactUs input:focus {
+  background-color: var(--green-color4);
+}
+.pages-light #main-contactUs textarea:focus,
+.pages-light #main-contactUs input:focus {
+  background-color: var(--green-color4);
+}
+.pages-light #submit:hover {
+  color: var(--light-color4);
+  background-color: var(--dark-color4);
+}
+.pages-dark #submit:hover {
+  color: var(--dark-color4);
+  background-color: var(--light-color4);
 }
 
 @media (max-width: 800px) and (min-width: 501px) {

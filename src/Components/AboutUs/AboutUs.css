@@ -1,0 +1,9 @@
+#AboutUs p{
+    font-size: 25px;
+    margin: auto;
+    max-width: 80%;
+}
+#AboutUs #span{
+    cursor: pointer;
+    text-decoration: underline;
+}

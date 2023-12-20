@@ -29,7 +29,10 @@ export default function CrazyPick() {
           >
             Pick Another
           </button>
-          {crazyPark != undefined ? (
+          {
+          crazyPark.name != undefined && crazyPark.location.city != undefined && crazyPark.location.state != undefined && 
+          crazyPark.pictures[0] != undefined && crazyPark.description != undefined && crazyPark?.activities != undefined 
+           ? (
             <div>
               <h1>{crazyPark?.name}</h1>
               <h3>
