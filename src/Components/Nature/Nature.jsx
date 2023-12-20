@@ -2,10 +2,12 @@ import React, { useEffect, useState } from "react";
 import national_parks from "../../nature.js";
 import "./Nature.css";
 import axios from "axios";
+import { useTheme } from "../../context/ThemeContext.jsx";
 
 export default function Nature() {
   const [parks, setParks] = useState();
   const [input, setInput] = useState("");
+  const {theme} = useTheme()
 
   const url = "https://657621200febac18d403b5d1.mockapi.io/parks";
   useEffect(() => {
@@ -59,7 +61,7 @@ export default function Nature() {
     }
   };
   return (
-    <main id="Nature" className="pages-light">
+    <main id="Nature" className={theme ? "pages-light" : "pages-dark"}>
       <div id="parks-list">
         {parks?.map(
           (park, index) =>

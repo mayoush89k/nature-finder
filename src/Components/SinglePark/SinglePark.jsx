@@ -12,12 +12,12 @@ export default function SinglePark() {
   const { state } = useLocation();
   const { getPark, loading, error, updateParkData } = useParks();
   const [inputValue, setInputValue] = useState("");
-  const [park, setPark] = useState(state.park);
+  const [park, setPark] = useState(state?.park);
   const {user , updateUser} = useUser() 
 
   useEffect(() => {
     async function fetch() {
-      setPark(await getPark(state.park.id));
+      setPark(await getPark(state?.park.id));
       console.log(park);
     }
     fetch();

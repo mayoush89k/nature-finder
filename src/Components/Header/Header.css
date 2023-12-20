@@ -83,7 +83,7 @@
 @media (max-width: 500px) {
   .Header {
     padding: 1px 10px;
-    font-size: 15px;
+    font-size: 10px;
   }
   .Header #menu{
     gap: 10px;
