@@ -143,13 +143,15 @@ const AddPark = () => {
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
-                  />
+                    placeholder='Name: '
+                    />
                 </label>
                 <br />
                 <label>Location: </label>
                 <label>
                   City:
                   <input
+                    placeholder='City: '
                     type="text"
                     name="city"
                     value={formData.city}
@@ -161,31 +163,34 @@ const AddPark = () => {
                 <label>
                   State:
                   <input
+                    placeholder='State: '
                     type="text"
                     name="state"
                     value={formData.state}
                     onChange={handleChange}
-                  />
+                    />
                 </label>
                 <br />
                 <label>
                   Description:
                   <input
+                    placeholder='Description: '
                     type="text"
                     name="description"
                     value={formData.description}
                     onChange={handleChange}
-                  />
+                    />
                 </label>
                 <br />
                 <label>
                   activities:
                   <input
+                    placeholder='Activity: '
                     type="text"
                     name="activity"
                     value={formData.activity}
                     onChange={handleChange}
-                  />
+                    />
                   <button
                     onClick={() => {
                       setFormData({
@@ -196,7 +201,7 @@ const AddPark = () => {
                         ],
                       });
                     }}
-                  >
+                    >
                     add activity
                   </button>
                 </label>
@@ -204,6 +209,7 @@ const AddPark = () => {
                 <label>
                   Pictures:
                   <input
+                    placeholder='Picture: '
                     type="text"
                     name="picture"
                     value={formData.picture}

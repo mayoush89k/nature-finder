@@ -89,7 +89,7 @@ export default function Nature() {
                 >
                   direction
                 </a>
-                <input type="text" onChange={(e) => setInput(e.target.value)} />
+                <input type="text" onChange={(e) => setInput(e.target.value)} placeholder="add picture link"/>
                 <button onClick={() => addPicture(park.id)}>add</button>
               </div>
             )

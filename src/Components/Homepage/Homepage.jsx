@@ -48,7 +48,7 @@ export default function Homepage() {
         ))}
       </div>
       {!state && (<div>
-        <input type="search"  value={searchValue} onChange={(e) => {setSearchValue(e.target.value);handleSearch(searchValue)}}/>
+        <input type="search" placeholder="Search Here" value={searchValue} onChange={(e) => {setSearchValue(e.target.value);handleSearch(searchValue)}}/>
         <select onChange={(e) => handleSelect(e)}>
           <option selected disabled>
             SortBy

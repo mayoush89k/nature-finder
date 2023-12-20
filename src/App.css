@@ -202,13 +202,13 @@ body {
 .pages-light input {
   border-color: transparent;
   background-color: transparent;
-  border-bottom-color: 5px solid var(--light-color3);
+  border-bottom-color: 5px solid var(--dark-color3);
   color: var(--dark-color3);
 }
 .pages-dark input {
   border-color: transparent;
   background-color: transparent;
-  border-bottom: 2px solid var(--dark-color4);
+  border-bottom: 2px solid var(--light-color4);
   color: var(--light-color3);
 }
 .pages-light input::placeholder {
