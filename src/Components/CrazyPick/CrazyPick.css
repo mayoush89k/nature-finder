@@ -2,6 +2,7 @@
     margin: auto;
     max-width: 90%;
     text-align: center;
+    justify-content: center;
 }
 
 #CrazyPick .Crazy{

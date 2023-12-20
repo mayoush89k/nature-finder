@@ -209,8 +209,10 @@ body {
   background-color: transparent;
   border-bottom-color: 5px solid var(--dark-color3);
   color: var(--dark-color3);
+  border-radius: 20px;
 }
 .pages-dark input {
+  border-radius: 20px;
   border-color: transparent;
   background-color: transparent;
   border-bottom: 2px solid var(--light-color4);
@@ -343,10 +345,12 @@ body {
 .pages-dark #main-contactUs textarea,
 .pages-dark #main-contactUs input {
   background-color: var(--dark-color4);
+  border-radius: 20px;
 }
 .pages-light #main-contactUs textarea,
 .pages-light #main-contactUs input {
   background-color: var(--light-color4);
+  border-radius: 20px;
 }
 .pages-dark #main-contactUs textarea:focus,
 .pages-dark #main-contactUs input:focus {

@@ -144,10 +144,11 @@ const AddPark = () => {
                     value={formData.name}
                     onChange={handleChange}
                     placeholder="..."
+                    className="full-width"
                   />
                 </label>
                 <br />
-                <label>Location: </label>
+                <label id="location">Location: </label>
                 <label>
                   City:
                   <input
@@ -158,8 +159,6 @@ const AddPark = () => {
                     onChange={handleChange}
                   />
                 </label>
-                <br />
-
                 <label>
                   State:
                   <input

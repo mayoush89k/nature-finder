@@ -67,7 +67,9 @@ const useParks = () => {
     setFilterParksList(parksList.sort((a, b) => (a.name > b.name ? 1 : -1)));
   };
   const sortByCity = () => {
-    setFilterParksList(parksList.sort((a, b) => (a.location.city > b.location.city ? 1 : -1)));
+    setFilterParksList(
+      parksList.sort((a, b) => (a.location.city > b.location.city ? 1 : -1))
+    );
   };
   const handleSearch = (input) => {
     setFilterParksList(
@@ -101,8 +103,10 @@ const useParks = () => {
     try {
       const response = await axios.get(url + "?id=" + random);
       console.log(response.data[0]);
-      setLoading(false);
-      return response.data[0];
+      setTimeout(() => {
+        setLoading(false);
+      }, 2000);
+      return await response.data[0];
     } catch (error) {
       console.error(error);
       setError(error);

@@ -1,11 +1,23 @@
+#AddPark {
+  justify-content: center;
+  padding-top:200px ;
+}
 #AddPark form {
+  margin-top: 15px;
+  padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    align-items: flex-start;
     gap: 10px;
-    padding: 20px;
     border-radius: 20px;
+  }
+  
+  #AddPark #location {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
   }
   #AddPark input {
     padding: 10px;
